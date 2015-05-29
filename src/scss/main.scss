@@ -1,0 +1,28 @@
+$wasabi-black:#0c0c0c;
+$wasabi-dark:#2b2b2b;
+$active-green:rgba(21, 237, 92, 0.5);
+$plate-cream:#fff9de;
+
+.wasabi-project {
+  button {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    border-spacing: 0;
+    margin: 0;
+    padding: 0;
+    // TODO: be better about focusing
+    //       maybe use a focus hook for setting stuff
+    &:focus {
+      outline: none;
+    }
+    &::-moz-focus-inner{
+      border: 0;
+    }
+  }
+  &, & *{
+    box-sizing: border-box;
+  }
+}
+
+@import "project",
+        "entry";

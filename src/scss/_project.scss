@@ -1,0 +1,97 @@
+/**
+ *  <div class="wasabi-project">
+ *    <div class="project-content">
+ *      <div class="project-toolbar">  <!-- for buttons and "tools" -->
+ *      </div>
+ *      <div class="project-comments"> <!-- for entry comments -->
+ *      </div>
+ *      <ul class="project-entries">   <!-- entries are nested in here -->
+ *      </ul>
+ *    </div>
+ *  </div>
+**/
+$toolbar-height: 40px;
+$toolbar-spacing: 4px;
+$comment-height: 200px;
+$project-max: 900px;
+$entries-max: 475px;
+$entries-padding: 15px;
+$comments-max: $project-max - $entries-max;
+
+.wasabi-project {
+
+  width: 100%;
+  padding: 15px;
+  margin: auto;
+  max-width: $project-max;
+
+  .project-content{
+    width: 100%;
+    position: relative;
+    &:before, // clearfix stuff
+    &:after {
+      content: " ";
+      display: table;
+    }
+    &:after { clear: both; }
+  }
+
+  .project-toolbar{
+    height: $toolbar-height;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    button {
+      height: $toolbar-height - $toolbar-spacing * 2 ;
+      margin-right: $toolbar-spacing;
+      border-radius: 4px;
+      font-size: 14px;
+      height: 24px;
+      margin-top: ($toolbar-height - 26px)/2;
+      padding: 0 5px;
+      background-color: #333;
+      color: white;
+      img {
+        vertical-align: middle;
+        height: 100%;
+        width: auto;
+      }
+    }
+  }
+
+  .project-comments{
+    display: inline-block;
+    min-height: 40px;
+    width: 40%;
+    float: right;
+    padding: 10px;
+  }
+  .project-entries{
+    float: right;
+    height:700px;
+    width: 60%;
+    padding: $entries-padding;
+    padding-top: $toolbar-height + $entries-padding;
+    margin: 0;
+    overflow-y: hidden;
+    &:hover{ overflow-y: scroll; }
+  }
+
+  @media (max-width: $project-max){
+
+    max-width: $project-max * 0.8;
+    .project-comments{
+      height: $comment-height;
+      width: 100%;
+      margin-top: 10 + $toolbar-height;
+      overflow-y: hidden;
+      &:hover{ overflow-y: scroll; }
+    }
+    .project-entries{
+      width: 100%;
+      padding-top: $entries-padding;
+    }
+  }
+}
+

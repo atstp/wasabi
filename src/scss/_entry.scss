@@ -1,0 +1,118 @@
+/**
+ * <li class=" wasabi-entry open">
+ *   <span class="entry-name type-executable"> theFilesName.sh </span>
+ *   <div class="entry-info"> <!-- catch-all? --> </div>
+ * </li>
+ * <div class="wasabi-entry-comment"> <!-- entry comment right meow --> </div>
+**/
+
+$entry-line: 16px;
+$indent: 50px;
+$entry-padding: 4px;
+$entry-margin: 2px;
+$entry-height: $entry-line + $entry-margin * 2 + $entry-padding * 2;
+$indicator-bar: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1OSIgaGVpZ2h0PSI0MjQiPjxyZWN0IHdpZHRoPSI1OSIgaGVpZ2h0PSI0MjQiIHg9Ii05OSIgeT0iLTQuMzIyIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg5OSA0LjMyMikiIHJ4PSIwIiByeT0iMCIgZmlsbD0iIzAwZiIgZmlsbC1vcGFjaXR5PSIuMTg0Ii8+PC9zdmc+';
+@mixin entryType( $char ){
+  &:after{
+    content: "#{$char}";
+    opacity: .5;
+    text-decoration: none;
+    display: inline-block;
+  }
+}
+
+.wasabi-entry{
+  list-style-type: none;
+  position: relative;
+  transition-duration: .2s;
+  font-size: $entry-line;
+  line-height: $entry-line;
+  transition-duration: .15s;
+  transition-timing-function: ease-in-out;
+  opacity: 1;
+
+  .entry-children{
+    padding-left: $indent;
+  }
+  .entry-name{
+    display: block;
+    padding: $entry-padding;
+    margin: $entry-margin;
+    border-radius: 4px;
+    color: black;
+    font-family: monospace;
+    transition-duration: .15s;
+    transition-timing-function: ease-in-out;
+    height: auto;
+  }
+  &.open{
+  }
+  &.closed{
+    .wasabi-entry{
+      line-height: 0px;
+      opacity: 0;
+      .entry-name{
+        padding: 0px;
+        height: 0px;
+        margin: 0px;
+      }
+    }
+    .type-directory:after{
+      display: inline;
+      height: 5px;
+      padding-left: $entry-margin;
+      content: '/\2026';
+    }
+  }
+  &.has-comments{
+    > .entry-name{
+      cursor: help;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      background-repeat:  no-repeat;
+      background-size: contain;
+      background-position: top left;
+      background-image: url('#{$indicator-bar}');
+    }
+  }
+  &.focused{
+    > .entry-name{
+      background-color: rgba(0,0,255,.2);
+    }
+  }
+  &.disabled{
+    > .entry-name{
+      pointer-events: none;
+      opacity: .3;
+    }
+  }
+  &.enabled{
+    > .entry-name{
+      pointer-events: all;
+      opacity: 1;
+    }
+  }
+
+  .type-directory{
+    @include entryType('/');
+  }
+
+  .type-symlink{
+    @include entryType('@');
+  }
+  .type-executable{
+    @include entryType('*');
+  }
+  .type-file{
+    @include entryType(' ');
+  }
+}
+.wasabi-entry-comment {
+  &.visible{
+    display: block;
+  }
+  &.hidden{
+    display: none;
+  }
+}
+

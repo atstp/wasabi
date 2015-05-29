@@ -1,0 +1,25 @@
+{
+  "name": "wasabi",
+  "version": "0.0.0",
+  "authors": [
+    "Dan <dan.ll.montague@gmail.com>"
+  ],
+  "description": "for making great projects better. ",
+  "main": "",
+  "keywords": [
+    "js",
+    "docs",
+    "directory",
+    "structure",
+    "documentation"
+  ],
+  "license": "MIT",
+  "homepage": "atstp.github.io/wasabi.js/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

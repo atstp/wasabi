@@ -1,0 +1,51 @@
+$comment-padding: 10px;
+$comment-indent: 10px;
+
+.wasabi-project {
+  .project-toolbar{
+    .wasabi-search-bar{
+      margin-right: 4px;
+      height: 26px;
+      padding-top: 0;
+    }
+    .menu-button{
+      background: transparent;
+      height: 30px;
+      padding: 0;
+      margin: 5px;
+      img.control-image{
+      }
+    }
+  }
+  .project-comments{
+    position: relative;
+    .wasabi-entry-comment,
+    .entry-comment{
+      padding-left: $comment-padding + $comment-indent;
+      .comment-header{
+        margin: 0;
+        padding: 6px 0;
+        font-weight: 300;
+        font-size: 20px;
+        margin-left: -1 * $comment-indent;
+      }
+    }
+    .project-info{
+      width: 100%;
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      opacity: .3;
+    }
+  }
+}
+.wasabi-entry{
+  &.disabled{
+    > .entry-name{
+      line-height: 12px;
+      font-size: 12px;
+      padding: 2px;
+    }
+  }
+}
