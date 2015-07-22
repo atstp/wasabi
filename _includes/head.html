@@ -1,0 +1,16 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{% if page.summary %}{{ page.summary }}{% else %}{{ site.description }}{% endif %}">
+
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/css/normalize.css">
+  <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/css/base.css">
+  <link rel="shortcut icon" href="favicon.ico">
+  {% for stylesheet in page.styles %}
+    <link rel="stylesheet" href="{{ stylesheet | prepend: site.baseurl | prepend: site.url }}">
+  {% endfor %}
+</head>

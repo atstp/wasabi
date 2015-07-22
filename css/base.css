@@ -1,0 +1,93 @@
+html,
+html * {
+  box-sizing: border-box;
+}
+html,
+body{
+  width: 100%;
+  width: 100%;
+  }
+.landing-section{
+  width: 100%;
+  min-height: 100vh;
+  }
+.landing-segment{
+  min-height: 50vh;
+  width: 100%;
+  }
+
+.vert-align{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  }
+
+.row:before,
+.row:after {
+  content: " ";
+  display: table;
+  }
+
+.row:after {
+  clear: both;
+  }
+.column,
+.columns{
+  float: left;
+}
+
+.one.column,
+.one.columns        { width: 10% }
+.two.columns        { width: 20% }
+.three.columns      { width: 30% }
+.four.columns       { width: 40% }
+.five.columns       { width: 50% }
+.six.columns        { width: 60% }
+.seven.columns      { width: 70% }
+.eight.columns      { width: 80% }
+.nine.columns       { width: 90% }
+.ten.columns        { width: 100% }
+
+.full-height{
+  height: 100%;
+}
+
+/*
+ *
+ * media QUERIES
+ *                V
+ *                  V
+ *                   V
+ *                   V
+ *                   V
+ */
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 1000px) {
+
+}
+
+@media (max-width: 750px) {
+
+}
+
+@media (max-width: 550px) {
+
+}
+
+@media (max-width: 400px) {
+  .one.column,
+  .one.columns        { width: 100% }
+  .two.columns        { width: 100% }
+  .three.columns      { width: 100% }
+  .four.columns       { width: 100% }
+  .five.columns       { width: 100% }
+  .six.columns        { width: 100% }
+  .seven.columns      { width: 100% }
+  .eight.columns      { width: 100% }
+  .nine.columns       { width: 100% }
+  .ten.columns        { width: 100% }
+}

@@ -1,0 +1,387 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+html,
+body{
+  font-family: 'Raleway', 'sans-serif';
+  }
+button{
+  background: none repeat scroll 0 0 transparent;
+  border: medium none;
+  border-spacing: 0;
+  margin-left: 15px;
+  padding: 0;
+  }
+.shadowed{
+  /*
+  box-shadow: 0 0 8px;
+  */
+  }
+
+.logo{
+  height: 50px;
+  width: auto;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  }
+
+
+/*
+ * DEMO AREA
+ */
+
+.landing-text{
+  margin: 0;
+  padding: 0 10px;
+  padding-top: 15px;
+  text-align: right;
+  }
+  .site-name,
+  .slogan{
+    margin: 0;
+    display: inline;
+    padding-top: 25px;
+    }
+  .slogan{
+    font-size: 15px;
+    }
+  .site-name{
+    font-size: 30px;
+    }
+
+.wasabi-code{
+  height: 100vh;
+  background-color: #ade183;
+  position: relative;
+  }
+#wasabi-editor{
+  max-width: 500px;
+  margin: auto;
+}
+.mimic-editor{
+  background: #333333;
+  color: rgba(255,255,255,0.7);
+  font-family: monospace;
+  margin: auto;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 15px;
+  border-radius: 10px;
+  }
+  @media (max-width: 1700px){
+    .mimic-editor{
+      border-radius: 0px;
+      }
+  }
+  .mimic-editor .static-area,
+  .mimic-editor #demo-area {
+
+    }
+  .mimic-editor #demo-area{
+    font-size: 15px;
+    padding: 10px;
+    padding-top: 20px;
+    padding-left: 0;
+    border: none;
+    border-left: solid 20px #444;
+    padding-left: 2px;
+    width: 100%;
+    background: inherit;
+    color: inherit;
+    min-height: 400px;
+    max-height: 800px;
+    height: 500px;
+    }
+textarea#demo-area::-moz-selection{
+  background-color: #555;
+  text-shadow: none;
+  }
+textarea#demo-area::selection{
+  background-color: #555;
+  text-shadow: none;
+  }
+
+.editor-prompt{
+  display: inline-block;
+  transform-origin: 100% 50%;
+  transform: translateX(-90%) rotate(-90deg);
+  transition-duration: .5s;
+  font-size: 18px;
+  opacity: .5;
+  }
+  #wasabi-editor:target .editor-prompt{
+    font-size: 25px;
+    opacity: 1;
+    }
+
+.example-buttons{
+    width: auto;
+    float: right;
+    padding-top: 15px;
+    padding-right: 10px;
+  }
+  .example-buttons button{
+    border-radius: 5px;
+    padding: 8px;
+    color: #333333;
+    font-weight: bolder;
+
+    float: right;
+    transition-duration: .5s;
+    }
+    #wasabi-editor.detailed #try-detailed{
+      background: #333333;
+      color: #ade183;
+      }
+    #wasabi-editor.indented #try-indented{
+      background: #333333;
+      color: #ade183;
+      }
+.small-screen-note{
+  position: absolute;
+  z-index: 50;
+  bottom: 30px;
+  left: 30px;
+  display: none;
+  }
+
+.content-below-arrow{
+  margin: 15px auto;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  border-right: solid 30px transparent;
+  border-left: solid 30px transparent;
+  border-top: solid 20px black;
+  opacity: .25;
+  }
+
+
+@media (max-width: 1150px){
+  .wasabi-code{
+    background: none;
+    box-shadow: none;
+    }
+  .demo-section{
+    display: none;
+    }
+  .small-screen-note{
+    display: block;
+    }
+  .output-area.columns{
+    width: 100%;
+    }
+}
+
+
+/*
+ *
+ * output area
+ *
+ */
+#output-area{
+  transition-duration: .5s;
+  }
+.output-area{
+  transition-duration: .5s;
+  position: fixed;
+  z-index: 0;
+  right: 0;
+  top: 0;
+  }
+
+.dummy-documentation{
+  opacity: .2;
+  max-width: 800px;
+  padding: 0 50px;
+  height: 100px;
+  overflow: hidden;
+  margin: auto;
+  filter: blur(2px);
+  opacity: 0;
+  }
+
+@media (max-width: 1000px){
+  .dummy-documentation{
+    display: none;
+    }
+  .output-area.columns{
+    }
+}
+
+
+
+/*
+ * FIRST BANNER: demo app and boilerplate script
+ */
+
+
+.curl-header,
+.demo-title{
+  padding-top: 40px;
+  }
+.demo-title{
+  position: absolute;
+  font-size: 22px;
+  margin: 0;
+  padding: 40px 0px;
+  top: 0;
+  left: -80px;
+  }
+.demo-name,
+.demo-frame{
+  transition-duration: .5s;
+  }
+.demo-name{
+  display: block;
+  position: absolute;
+  text-decoration: none;
+  color: transparent;
+  padding: 20px;
+  font-weight: bold;
+  }
+.demo-page-content{
+  width: 500px;
+  height: 400px;
+  }
+.demo-frame{
+  display: block;
+  position: absolute;
+  height: 300px;
+  width: 400px;
+
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  }
+  .demo-frame:hover{
+    transform: scale(1.05);
+    }
+  .demo-frame.demo-source{
+    bottom:0;
+    left:0;
+    backgroud-position: bottom left;
+    /* background-image: url("/img/browser-demo-source.png"); set in the html for url stuff */
+    }
+    .demo-frame.demo-source .demo-name{
+      bottom:0;
+      left:0;
+      }
+  .demo-frame.demo-page{
+    top:0;
+    right:0;
+    backgroud-position: top right;
+    /* background-image: url("/img/browser-demo.png"); set in the html for url stuff */
+    }
+    .demo-frame.demo-page .demo-name{
+      top:0;
+      right:0;
+      }
+
+
+
+.curl-header{
+  font-size: 22px;
+  font-weight: bold;
+  }
+.curl-shell{
+  background: #222;
+  color: #ddd;
+  font-family: monospace;
+  padding: 8px;
+  overflow-x: scroll;
+  border-radius: 5px;
+  }
+  .curl-shell li{
+    list-style-type: none;
+    font-size: 15px;
+    padding: 6px 0;
+    white-space: nowrap;
+    }
+    .curl-shell li:before{
+      content: '$ ';
+      }
+.next-steps{
+  font-size: 18px;
+  text-align: center;
+  vertical-align: middle;
+  text-align: right;
+  margin-top: 30px;
+  padding: 0;
+  }
+  .next-steps .arrow-indicator{
+    font-weight: bold;
+    font-size: 30px;
+    vertical-align: middle;
+    }
+  .next-steps li{
+    vertical-align: middle;
+    padding-top: 0;
+    list-style-type: none;
+    }
+
+.demo-page-area,
+.curl-area{
+  position: relative;
+  height: 500px;
+  }
+.curl-content,
+.demo-page-content{
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+  margin-top: 50px;
+  }
+.hide-sm{ display: inline; }
+.hide-lg{ display: none; }
+@media (max-width: 1000px){
+  #banners .demo-page-area,
+  #banners .curl-area{
+    width: 100%;
+    }
+  .hide-sm { display: none; }
+  .hide-lg { display: inline; }
+}
+
+#banners{
+  position: relative;
+  z-index: 10;
+  background-color: #CCC;
+  border: solid 0px transparent;
+  }
+  #banners .getting-started {
+    position: relative;
+    z-index: 500;
+    }
+  #banners .help{
+    width: 100%;
+    background-color: #CCCC9A;
+    text-align: center;
+    position: relative;
+    }
+    #banners .help .cta{
+      width: 100%;
+      }
+      .download-links{
+        text-align: center;
+        margin: 0;
+        padding: 15px 0;
+        opacity: .5;
+        transition-duration: .3s;
+        }
+        .download-links:hover{
+          opacity: 1;
+          }
+      #banners .help .cta .project-name{
+        letter-spacing: 5px;
+        margin-bottom: 0;
+        }
+      #banners .help .cta .tagline{
+        width: auto;
+        letter-spacing: 1.5px;
+        }
+      #banners .help .cta .icon{
+        max-width:200px;
+        height: auto;
+        }

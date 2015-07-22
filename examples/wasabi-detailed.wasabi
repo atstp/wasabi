@@ -1,0 +1,150 @@
+wasabi/             # the project root!
+wasabi/README.md    # start here!
+wasabi/bower.json   # the usual, bower's amassador
+wasabi/package.json # npm's ambassador
+
+wasabi/EXAMPLES.md
+  use and implementation tricks, tips, and more
+
+wasabi/Gruntfile.js
+  configuration for the Grunt taskrunner
+
+wasabi/bin/
+  wasabi's executables
+
+wasabi/bin/boilerplate.sh*
+  a quick generator with an example comment
+
+wasabi/bin/demo-page.sh*
+  builds and serves an example page with
+  your choice of inline or async source code
+
+wasabi/bin/detailed.sh*
+  print out a boilerplate of the current
+  directory listing out the full path for each file
+
+wasabi/bin/indented.sh*
+  print (stdout) a boilerplate, indenting
+  children under thier parents with just the
+  file's name
+
+wasabi/dist/ # where the build goes
+wasabi/examples/
+  demo wasabi projects
+
+wasabi/examples/wasabi.indented.txt
+  wasabi documented as an indented list
+wasabi/examples/wasabi.detailed.txt
+  wasabi documented as an detailed list
+
+wasabi/img/
+  sundry images (almost entirely logo stuff)
+
+wasabi/img/bg-indicator.svg
+  (data uri) the bar on the left of entries to
+  indicate that they have a comment available
+  run through <code>svgo</code>
+
+wasabi/img/favicon.ico
+wasabi/img/logos.svg
+  big ol' svg file. source for logos and icons
+
+wasabi/img/wasabi_icon.svg
+  the plate and dollop
+
+wasabi/img/wasabi_logo.svg
+  the plate and dollop with "wasabi.js" after
+
+wasabi/plugins/
+  the default interface quarantined for easy separation
+
+wasabi/plugins/wasabi.basic.css
+  styles for the basic/default wasabi interface
+  search-box, file-comment headers
+
+wasabi/plugins/wasabi.basic.js
+  functionality for the basic/default wasabi interface
+  search, auto-header-insertion
+
+wasabi/src/ # core stuff
+wasabi/src/get-wasabi.js
+  auto includes wasabi.js wasabi.css
+  and pulls in a remote wasabi file like
+  <a href="https://s3.amazonaws.com/wasabi.js/examples/wasabi.txt">this one </a>
+
+wasabi/src/js/
+wasabi/src/js/Wasabi.js
+  global object and version
+
+wasabi/src/js/core/
+  stuff that gets reused or doesn't fit in
+  with "projects" or "entries"
+
+wasabi/src/js/core/entrify.js
+  takes a wasabi file, and turns it into a list
+  of entries
+
+wasabi/src/js/core/pluginable.js
+  returns an object that can be used to register
+  plugins. Used by Wasabi.Entry and Wasabi.Project
+
+wasabi/src/js/core/Utils.js
+  mostly dom stuff: class states, element creation
+
+wasabi/src/js/entry/
+  the entries themselves
+
+wasabi/src/js/entry/add-child.js
+  let's a directory take children of its own
+
+wasabi/src/js/entry/closable-directories.js
+  introduces the close method on the api
+
+wasabi/src/js/entry/disableable.js
+  introduces the disable method on the api
+  and updates aria-diabled accordingly
+
+wasabi/src/js/entry/dom-basics.js
+  introduces the dom object
+
+wasabi/src/js/entry/Entry.js
+  entry's constructor: identifies the source
+  an makes it "pluginable"
+
+wasabi/src/js/entry/focusable.js
+
+wasabi/src/js/entry/initialize.js
+  the first plugin
+
+wasabi/src/js/entry/interface.js
+  basic interaction
+
+wasabi/src/js/entry/types.js
+  identifies the entry's extensions and type:
+  directory, file, executable, or symlink
+
+wasabi/src/js/project/
+wasabi/src/js/project/dom.js
+  introduce the basic dom object for a project
+
+wasabi/src/js/project/each-entry.js
+  provides the function to iterate over all of the
+  project's entries (a tree) as if it was a flat array
+
+wasabi/src/js/project/insert.js
+  inserting the project into the dom
+
+wasabi/src/js/project/nest-children.js
+  for adding entries to the project
+
+wasabi/src/js/project/Project.js
+  Project's constructor: identifies the source
+  an makes it "pluginable"
+
+wasabi/src/scss/
+wasabi/src/scss/_entry.scss
+  styling for .wasabi-entry, its children, and
+  .wasabi-entry-comment
+
+wasabi/src/scss/main.scss     # some globals and defaults
+wasabi/src/scss/_project.scss # project layout

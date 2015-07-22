@@ -1,0 +1,35 @@
+.wasabi-project .project-toolbar .wasabi-search-bar {
+  margin-right: 4px;
+  height: 26px;
+  padding-top: 0; }
+.wasabi-project .project-toolbar .menu-button {
+  background: transparent;
+  height: 30px;
+  padding: 0;
+  margin: 5px; }
+.wasabi-project .project-comments {
+  position: relative; }
+  .wasabi-project .project-comments .wasabi-entry-comment,
+  .wasabi-project .project-comments .entry-comment {
+    padding-left: 20px; }
+    .wasabi-project .project-comments .wasabi-entry-comment .comment-header,
+    .wasabi-project .project-comments .entry-comment .comment-header {
+      margin: 0;
+      padding: 6px 0;
+      font-weight: 300;
+      font-size: 20px;
+      margin-left: -10px; }
+  .wasabi-project .project-comments .project-info {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: .3; }
+
+.wasabi-entry.disabled > .entry-name {
+  line-height: 12px;
+  font-size: 12px;
+  padding: 2px; }
+
+/*# sourceMappingURL=wasabi.basic.css.map */

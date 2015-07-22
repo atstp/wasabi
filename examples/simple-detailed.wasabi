@@ -1,0 +1,32 @@
+# this comment, before any entries, will be
+# recoreded as the project's comment
+
+# this file describes the
+#
+#   detailed syntax
+
+root/
+  this is a comment on 'root'
+
+root/readme.md
+  comments are indented under their entry this
+  comment is for 'readme.md', a child of 'root/'
+  it's specified by the full path
+
+  empty lines are ignored
+
+root/usage.md
+  the detailed syntax is good for large projects
+  and comprehensive commenting
+
+root/src/
+  directories MUST be identified with a trailing '/'
+
+root/src/fileOne.txt
+  files don't need any notation
+
+root/src/fileTwo*
+  executables can be identified with '*'
+
+root/src/fileThree@
+  symlinks can be identified with '@'

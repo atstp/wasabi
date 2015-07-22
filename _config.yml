@@ -1,0 +1,13 @@
+title: wasabi.js
+description: >
+  write better docuementation with directory structures powered
+  by wasabi.js. Simple, readable syntax yields an interactive
+  directory structure to help other developers get started on your
+  project quick.
+baseurl: "/wasabi"
+url: "http://atstp.github.io"
+markdown: kramdown
+permalink: pretty
+exclude:
+  - node_modules
+  - dist

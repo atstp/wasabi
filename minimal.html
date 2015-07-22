@@ -1,0 +1,93 @@
+---
+layout: html
+---
+<style>
+  html,body,.wrapper{
+    width: 100%;
+    height: 100%;
+  }
+  .wrapper{
+    margin-top: 10%;
+  }
+  .view-source{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+  }
+</style>
+
+
+<a class="view-source" href="view-source:#">[view source]</a>
+<div class="wrapper">
+
+<!-- start of wasabi stuff
+
+                 |
+                 |
+                 |
+                \|/
+                 v
+-->
+
+<link href="/css/wasabi.css"       rel="stylesheet">          <!-- INCLUDE wasabi.css -->
+
+
+<div class="wasabi-original"
+     id="simple-project">                            <!-- IDENTIFY YOUR PROJECT SOURCE BY ID -->
+
+this-site/           # nuff said
+
+this-site/index.html
+  the home page for this site lives here
+
+this-site/minimal/   # exists only for pretty urls
+
+this-site/minimal/index.html
+  this is where the page you're looking at is!
+
+this-site/css/
+this-site/css/wasabi.css
+
+this-site/examples/  # examples for all sorts of wasabi projects
+
+this-site/examples/simple-indented.wasabi
+
+this-site/js/        # scripts go here
+
+this-site/js/wasabi.js
+  the business
+
+this-site/img/       # pics 'n stuff
+
+this-site/img/logos.svg
+  if you want to fiddle with the wasabi logo/icon
+  get it here!
+
+this-site/img/wasabi.png
+  the raster logo! nice for throwing in web pages
+  for attribution and such
+
+</div>
+
+<script src="/js/wasabi.js"></script>                   <!-- INCLUDE wasabi.js -->
+
+<script>
+
+  var myProject = new Wasabi.Project('#simple-project');        // INIT YOUR PROJECT WITH ITS ID
+
+  // and swap out the old contents
+  //     with the new project
+  myProject.replace();
+
+</script>
+<!--
+      that's the end of wasabi stuff
+
+               \   /
+                \ /
+                 X
+                / \
+               /   \
+-->
+
+</div>

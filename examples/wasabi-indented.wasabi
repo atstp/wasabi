@@ -1,0 +1,93 @@
+wasabi/ # the project root!
+  README.md           # start here!
+  EXAMPLES.md         # use and implementation tricks, tips, and more
+  Gruntfile.js        # configuration for the Grunt taskrunner
+  bower.json          # the usual, bower's amassador
+  package.json        # npm's ambassador
+
+  bin/                # wasabi's executables
+
+    boilerplate.sh*   # a quick generator with an example comment
+
+    demo-page.sh*     # builds and serves an example page with
+                      # your choice of inline or async source code
+
+    detailed.sh*      # print out a boilerplate of the current
+                      # directory listing out the full path for each file
+    indented.sh*      # print (stdout) a boilerplate, indenting
+                      # children under thier parents with just the
+                      # file's name
+
+  dist/               # where the build goes
+
+  examples/           # demo wasabi projects
+    wasabi.indented.txt # wasabi documented as an indented list
+    wasabi.detailed.txt # wasabi documented as an detailed list
+
+  img/                # sundry images (almost entirely logo stuff)
+    bg-indicator.svg  # (data uri) the bar on the left of entries to
+                      # indicate that they have a comment available
+                      # run through <code>svgo</code>
+    favicon.ico
+    logos.svg         # big ol' svg file. source for logos and icons
+    wasabi_icon.svg   # the plate and dollop
+    wasabi_logo.svg   # the plate and dollop with "wasabi.js" after
+
+  plugins/            # the default interface quarantined for easy separation
+    wasabi.basic.css  # styles for the basic/default wasabi interface
+                      # search-box, file-comment headers
+    wasabi.basic.js   # functionality for the basic/default wasabi interface
+                      # search, auto-header-insertion
+
+  src/                # core stuff
+
+    get-wasabi.js     # auto includes wasabi.js wasabi.css
+                      # and pulls in a remote wasabi file like
+                      # <a href="https://s3.amazonaws.com/wasabi.js/examples/wasabi.txt">
+                      # this one </a>
+
+    js/
+      Wasabi.js       # global object and version
+
+      core/           # stuff that gets reused or doesn't fit in
+                      # with "projects" or "entries"
+        entrify.js    # takes a wasabi file, and turns it into a list
+                      # of entries
+        pluginable.js # returns an object that can be used to register
+                      # plugins. Used by Wasabi.Entry and Wasabi.Project
+        Utils.js      # mostly dom stuff: class states, element creation
+
+      entry/          # the entries themselves
+        add-child.js  # let's a directory take children of its own
+
+        closable-directories.js
+                      # introduces the close method on the api
+
+        disableable.js
+                      # introduces the disable method on the api
+                      # and updates aria-diabled accordingly
+        dom-basics.js # introduces the dom object
+        Entry.js      # entry's constructor: identifies the source
+                      # an makes it "pluginable"
+        focusable.js
+        initialize.js # the first plugin
+        interface.js  # basic interaction
+        types.js      # identifies the entry's extensions and type:
+                      # directory, file, executable, or symlink
+
+      project/
+        dom.js        # introduce the basic dom object for a project
+        each-entry.js # provides the function to iterate over all of the
+                      # project's entries (a tree) as if it was a flat array
+        insert.js     # inserting the project into the dom
+
+        nest-children.js
+                      # for adding entries to the project
+        Project.js    # Project's constructor: identifies the source
+                      # an makes it "pluginable"
+
+    scss/
+      _entry.scss     # styling for .wasabi-entry, its children, and
+                      # .wasabi-entry-comment
+      main.scss       # some globals and defaults
+      _project.scss   # project layout
