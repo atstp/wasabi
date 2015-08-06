@@ -90,4 +90,5 @@ _then_ make a boilerplate
 
 _or_ launch a demo page (a local server with a demo of the current directory)
 
-    curl http://atstp.github.io/wasabi/demo-page.sh | sh
+    curl http://atstp.github.io/wasabi/demo-page.sh > demo-this-project.sh
+    sh demo-this-project.sh
