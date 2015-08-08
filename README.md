@@ -1,35 +1,30 @@
-# [wasabi.js](http://atstp.github.io/wasabi/)
+## [wasabi](http://atstp.github.io/wasabi/) takes this &darr;
 
-> if your project is sushi, this is wasabi
+    my-project/
+      bowser.json # mario's least favorite package manager
 
-Wasabi won't make a so-so project excellent, but it will make your great
-project tastier. Clearly presenting your project structure works wonders:
+      src/
+        helper.js # be familiar with it's brother main.js
+                  # first, this file houses a good bit of
+                  # sugar for the core features
 
-  * **for frameworks**, this means quicker, more painless user adoption --
-    people use what they understand.
+        main.js   # the core of the app, supports x, y, and z
 
-  * **for libraries**, it helps get contributors on board quickly -- bugs get fixed
-    quicker if people know where to look for them.
+      dist/
+        build.js      # link to me for testing
+        build.min.js  # tiny and obfuscated, for production
 
-Places it would be nice:
-[jekyll](http://jekyllrb.com/docs/structure/),
-[apache maven](https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html),
-[mac developer library](https://developer.apple.com/library/mac/documentation/FileManagement/Conceptual/FileSystemProgrammingGuide/FileSystemOverview/FileSystemOverview.html),
-[tecmint on linux](http://www.tecmint.com/linux-directory-structure-and-important-files-paths-explained/),
-[tldp/linux](http://www.tldp.org/LDP/intro-linux/html/sect_03_01.html#sect_03_01_03),
-[vim](http://learnvimscriptthehardway.stevelosh.com/chapters/42.html),
-[wordpress](http://www.wpexplorer.com/wordpress-internal-function/),
-[ruby gems](http://guides.rubygems.org/patterns/),
-[express js](http://stackoverflow.com/questions/5778245/expressjs-how-to-structure-an-application),
-[aws mturk](http://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkCLT/CLTFilesArticle.html),
-[tutorialspoint on rails](http://www.tutorialspoint.com/ruby-on-rails/rails-directory-structure.htm),
-[freebsd](https://www.freebsd.org/doc/handbook/dirstructure.html),
-[angular](https://scotch.io/tutorials/angularjs-best-practices-directory-structure),
-and [more](https://www.google.com/search?q=directory+structure).
+      bin/
+        project-name  # run this to generate a new version of
+                      # to do whatever this project does!
 
-## use
+## and makes this &darr;
 
-#### automatic insertion (tldr;)
+![wasabi in action](http://atstp.github.io/wasabi/img/demo.gif)
+
+--------------------------------------------------------------------------------
+
+## Use
 
 >
 > paste this into your site
@@ -48,7 +43,7 @@ and [more](https://www.google.com/search?q=directory+structure).
 >     </script>
 >
 
-#### inline
+### inline
 
 >
 >     <link rel="stylesheet" src="wasabi.css"/>
@@ -75,7 +70,7 @@ and [more](https://www.google.com/search?q=directory+structure).
 >     </script>
 >
 
-## try it out
+## Generators
 
 Naturally `cd` into your project (for windows, use [cygwin](https://www.cygwin.com/))
 
