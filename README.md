@@ -1,4 +1,4 @@
-## [wasabi](http://atstp.github.io/wasabi/) takes this &darr;
+## [wasabi](http://atstp.github.io/wasabi/) takes this :page_facing_up:
 
     my-project/
       bowser.json # mario's least favorite package manager
@@ -18,7 +18,7 @@
         project-name  # run this to generate a new version of
                       # to do whatever this project does!
 
-## and makes this &darr;
+## and makes this :tada:
 
 ![wasabi in action](http://atstp.github.io/wasabi/img/demo.gif?clearcache=1)
 
