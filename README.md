@@ -20,7 +20,7 @@
 
 ## and makes this &darr;
 
-![wasabi in action](http://atstp.github.io/wasabi/img/demo.gif)
+![wasabi in action](http://atstp.github.io/wasabi/img/demo.gif?clearcache=1)
 
 --------------------------------------------------------------------------------
 
