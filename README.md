@@ -22,7 +22,34 @@
         project-name  # run this to generate a new version of
                       # to do whatever this project does!
 
-## [[demo](http://atstp.github.io/wasabi/)]
+## about wasabi
+
+Directory structures the first thing _anyone_ sees in _every_ project,
+and knowing what's where simplifies everything tremendously.
+
+Ascii-art is
+[the](https://scotch.io/tutorials/angularjs-best-practices-directory-structure)
+[de-facto](http://jekyllrb.com/docs/structure/)
+[standard](http://www.tutorialspoint.com/ruby-on-rails/rails-directory-structure.htm)
+for this &mdash; never thought i'd write that sentence &mdash;
+sometimes you'll run across
+[other](http://www.thegeekstuff.com/2010/09/linux-file-system-structure/)
+[approaches](https://developer.apple.com/library/mac/documentation/FileManagement/Conceptual/FileSystemProgrammingGuide/FileSystemOverview/FileSystemOverview.html).
+Ascii-art is easy on the developer and hard on the reader, images are the opposite.
+
+<!--
+  Images and tables are a pain to make, and ascii-art rarely has more than a few words to describe the
+  file or directory's purpose, further description gets thrown in a bulleted list below the "art".
+  (besides, google says ascii-art is past its
+  [peak](https://books.google.com/ngrams/graph?content=ascii+art&case_insensitive=on&year_start=1970&year_end=2008&corpus=15&smoothing=3)).
+-->
+
+wasabi makes this easier for the developer _and_ reader:
+
+  * it stays editable and readable as raw text
+  * it whips up into a convenient interface in a browser
+
+[demo](http://atstp.github.io/wasabi/)
 
 --------------------------------------------------------------------------------
 
@@ -50,7 +77,7 @@
 ### inline
 
 >
-> or include the styles, scripts, and plain-text manually
+> include the styles, scripts, and plain-text inline
 >
 >     <link rel="stylesheet" src="wasabi.css"/>
 >     <div id="project-structure">
