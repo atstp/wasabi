@@ -1,4 +1,8 @@
-## [wasabi](http://atstp.github.io/wasabi/) takes this :page_facing_up:
+## wasabi makes this :tada:
+
+![wasabi in action](http://atstp.github.io/wasabi/img/demo.gif?clearcache=1)
+
+## from plain text :page_facing_up:
 
     my-project/
       bowser.json # mario's least favorite package manager
@@ -18,16 +22,16 @@
         project-name  # run this to generate a new version of
                       # to do whatever this project does!
 
-## and makes this :tada:
-
-![wasabi in action](http://atstp.github.io/wasabi/img/demo.gif?clearcache=1)
+## [[demo](http://atstp.github.io/wasabi/)]
 
 --------------------------------------------------------------------------------
 
 ## Use
 
+### async
+
 >
-> paste this into your site
+> paste this where you want you demo loaded
 >
 >     <script id="wasabi-location">
 >       (function(){
@@ -45,6 +49,8 @@
 
 ### inline
 
+>
+> or include the styles, scripts, and plain-text manually
 >
 >     <link rel="stylesheet" src="wasabi.css"/>
 >     <div id="project-structure">
@@ -72,7 +78,7 @@
 
 ## Generators
 
-Naturally `cd` into your project (for windows, use [cygwin](https://www.cygwin.com/))
+Naturally, `cd` into your project (for windows, use [cygwin](https://www.cygwin.com/))
 
     cd ~/path/to/my/project
 
