@@ -22,34 +22,28 @@
         project-name  # run this to generate a new version of
                       # to do whatever this project does!
 
-## about wasabi
+## about it
 
-Directory structures the first thing _anyone_ sees in _every_ project,
-and knowing what's where simplifies everything tremendously.
+Directory structures are first thing _anyone_ sees in _every_ project.
 
 Ascii-art is
 [the](https://scotch.io/tutorials/angularjs-best-practices-directory-structure)
 [de-facto](http://jekyllrb.com/docs/structure/)
 [standard](http://www.tutorialspoint.com/ruby-on-rails/rails-directory-structure.htm)
-for this &mdash; never thought i'd write that sentence &mdash;
-sometimes you'll run across
+for this &mdash; i never thought i'd write that sentence.
+Granted, sometimes you'll come across
+[some](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard)
 [other](http://www.thegeekstuff.com/2010/09/linux-file-system-structure/)
 [approaches](https://developer.apple.com/library/mac/documentation/FileManagement/Conceptual/FileSystemProgrammingGuide/FileSystemOverview/FileSystemOverview.html).
-Ascii-art is easy on the developer and hard on the reader, images are the opposite.
 
-<!--
-  Images and tables are a pain to make, and ascii-art rarely has more than a few words to describe the
-  file or directory's purpose, further description gets thrown in a bulleted list below the "art".
-  (besides, google says ascii-art is past its
-  [peak](https://books.google.com/ngrams/graph?content=ascii+art&case_insensitive=on&year_start=1970&year_end=2008&corpus=15&smoothing=3)).
--->
+Documenting with ascii-art is a quick-fix for the developer and _not awesome&trade;_ for the reader.
+Using pictures is just slighly better, with the side-effect of temporarily turning your dev environment
+into MS Paint.
 
-wasabi makes this easier for the developer _and_ reader:
+wasabi gets you best of both:
 
-  * it stays editable and readable as raw text
-  * it whips up into a convenient interface in a browser
-
-[demo](http://atstp.github.io/wasabi/)
+  * readable and maintainable source text
+  * a pleasant, intuitive interface
 
 --------------------------------------------------------------------------------
 
@@ -120,3 +114,5 @@ _or_ launch a demo page (a local server with a demo of the current directory)
 
     curl http://atstp.github.io/wasabi/demo-page.sh > demo-this-project.sh
     bash demo-this-project.sh
+
+### [more](http://atstp.github.io/wasabi/)
