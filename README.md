@@ -24,28 +24,28 @@
 
 ## about
 
-:seedling: Directory structures are first thing _anyone_ sees in _every_ project.
-Good documentation can help make a good first impression :star2:.
+Directory structures :eyes: are first thing _anyone_ sees in _every_ project.
+Good documentation makes a :star: great first impression and gives users a strong
+base to build on.
 
 Ascii-art is
 [the](https://scotch.io/tutorials/angularjs-best-practices-directory-structure)
 [de-facto](http://jekyllrb.com/docs/structure/)
 [standard](http://www.tutorialspoint.com/ruby-on-rails/rails-directory-structure.htm)
-for this &mdash; i never thought i'd write that sentence.
-Granted, sometimes you'll come across
+for this &mdash; i never thought i'd write that sentence... but there it is.
+You might also come across
 [some](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard)
 [other](http://www.thegeekstuff.com/2010/09/linux-file-system-structure/)
-[approaches](https://developer.apple.com/library/mac/documentation/FileManagement/Conceptual/FileSystemProgrammingGuide/FileSystemOverview/FileSystemOverview.html)
-:8ball:.
+[approaches](https://developer.apple.com/library/mac/documentation/FileManagement/Conceptual/FileSystemProgrammingGuide/FileSystemOverview/FileSystemOverview.html).
 
-Documenting with ascii-art is a quick-fix :wrench: for the developer and _not awesome&trade;_ for the reader.
+Documenting with ascii-art is a quick-fix :wrench: for the developer and _not awesome&trade;_ for the user.
 Using pictures is just slighly better, with the side-effect of temporarily turning your dev environment
-into MS Paint :fire:.
+into MS Paint :finnadie:.
 
-wasabi gets you best of both:
+#### wasabi gets you best of both:
 
-  * readable and maintainable source text
-  * a pleasant, intuitive interface
+  * :eyeglasses: readable and maintainable source text
+  * :bulb: a pleasant, intuitive interface
 
 --------------------------------------------------------------------------------
 
