@@ -32,11 +32,11 @@ Ascii-art is
 [the](https://scotch.io/tutorials/angularjs-best-practices-directory-structure)
 [de-facto](http://jekyllrb.com/docs/structure/)
 [standard](http://www.tutorialspoint.com/ruby-on-rails/rails-directory-structure.htm)
-for this &mdash; i never thought i'd write that sentence... but there it is.
-You might also come across
+for this &mdash; ha, did you ever think you'd see that sentence? (
+you might also find
 [some](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard)
 [other](http://www.thegeekstuff.com/2010/09/linux-file-system-structure/)
-[approaches](https://developer.apple.com/library/mac/documentation/FileManagement/Conceptual/FileSystemProgrammingGuide/FileSystemOverview/FileSystemOverview.html).
+[approaches](https://developer.apple.com/library/mac/documentation/FileManagement/Conceptual/FileSystemProgrammingGuide/FileSystemOverview/FileSystemOverview.html))
 
 Documenting with ascii-art is a quick-fix :wrench: for the developer and _not awesome&trade;_ for the user.
 Using pictures is just slighly better, with the side-effect of temporarily turning your dev environment
