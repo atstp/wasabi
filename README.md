@@ -24,7 +24,8 @@
 
 ## about
 
-:seedling: Directory structures are first thing _anyone_ sees in _every_ project. Documenting them is important.
+:seedling: Directory structures are first thing _anyone_ sees in _every_ project.
+Good documentation can help make a good first impression :star2:.
 
 Ascii-art is
 [the](https://scotch.io/tutorials/angularjs-best-practices-directory-structure)
