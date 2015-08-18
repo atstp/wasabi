@@ -24,8 +24,8 @@
 
 ## about
 
-Directory structures :eyes: are first thing _everyone_ sees in _any_ project.
-Good documentation makes a :star: great first impression and gives users a strong
+Directory structures are first thing _everyone_ :eyes: sees in _any_ project.
+Good documentation :books: makes a great first impression :star: and gives users a strong
 base to build on.
 
 There a
