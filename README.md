@@ -24,21 +24,22 @@
 
 ## about
 
-Directory structures are first thing _anyone_ sees in _every_ project.
+:seedling: Directory structures are first thing _anyone_ sees in _every_ project. Documenting them is important.
 
 Ascii-art is
 [the](https://scotch.io/tutorials/angularjs-best-practices-directory-structure)
 [de-facto](http://jekyllrb.com/docs/structure/)
 [standard](http://www.tutorialspoint.com/ruby-on-rails/rails-directory-structure.htm)
-for documenting project structures &mdash; i never thought i'd write that sentence.
+for this &mdash; i never thought i'd write that sentence.
 Granted, sometimes you'll come across
 [some](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard)
 [other](http://www.thegeekstuff.com/2010/09/linux-file-system-structure/)
-[approaches](https://developer.apple.com/library/mac/documentation/FileManagement/Conceptual/FileSystemProgrammingGuide/FileSystemOverview/FileSystemOverview.html).
+[approaches](https://developer.apple.com/library/mac/documentation/FileManagement/Conceptual/FileSystemProgrammingGuide/FileSystemOverview/FileSystemOverview.html)
+:8ball:.
 
-Documenting with ascii-art is a quick-fix for the developer and _not awesome&trade;_ for the reader.
+Documenting with ascii-art is a quick-fix :wrench: for the developer and _not awesome&trade;_ for the reader.
 Using pictures is just slighly better, with the side-effect of temporarily turning your dev environment
-into MS Paint.
+into MS Paint :fire:.
 
 wasabi gets you best of both:
 
