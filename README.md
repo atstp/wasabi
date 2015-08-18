@@ -42,10 +42,13 @@ Documenting with ascii-art is a quick-fix :wrench: for the developer and _not aw
 Using pictures is just slighly better, with the side-effect of temporarily turning your dev environment
 into MS Paint :finnadie:.
 
-#### wasabi gets you best of both:
+wasabi gets you best of both:
 
   * :eyeglasses: readable and maintainable source text
   * :bulb: a pleasant, intuitive interface
+
+and fits an important spot in project :seedling: growth: introducing :wave: people
+to the project, so they know what to expect once they get it in their hands.
 
 --------------------------------------------------------------------------------
 
