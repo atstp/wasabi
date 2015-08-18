@@ -24,7 +24,7 @@
 
 ## about
 
-Directory structures :eyes: are first thing _anyone_ sees in _every_ project.
+Directory structures :eyes: are first thing _everyone_ sees in _any_ project.
 Good documentation makes a :star: great first impression and gives users a strong
 base to build on.
 
@@ -36,7 +36,7 @@ to this, but ascii-art is
 [the](https://scotch.io/tutorials/angularjs-best-practices-directory-structure)
 [_de facto_](http://jekyllrb.com/docs/structure/)
 [standard](http://www.tutorialspoint.com/ruby-on-rails/rails-directory-structure.htm)
-&mdash; did you think you'd ever see that sentence?
+&mdash; did you think you'd ever read that sentence?
 
 Documenting with ascii-art is a quick-fix :wrench: for the developer and _not awesome&trade;_ for the user.
 Using pictures is just slighly better, with the side-effect of temporarily turning your dev environment
