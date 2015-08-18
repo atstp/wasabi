@@ -19,10 +19,10 @@
         build.min.js  # tiny and obfuscated, for production
 
       bin/
-        project-name  # run this to generate a new version of
-                      # to do whatever this project does!
+        project-name  # run this to generate a new instance
+                      # of my-project on your machine
 
-## about it
+## about
 
 Directory structures are first thing _anyone_ sees in _every_ project.
 
@@ -30,7 +30,7 @@ Ascii-art is
 [the](https://scotch.io/tutorials/angularjs-best-practices-directory-structure)
 [de-facto](http://jekyllrb.com/docs/structure/)
 [standard](http://www.tutorialspoint.com/ruby-on-rails/rails-directory-structure.htm)
-for this &mdash; i never thought i'd write that sentence.
+for documenting project structures &mdash; i never thought i'd write that sentence.
 Granted, sometimes you'll come across
 [some](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard)
 [other](http://www.thegeekstuff.com/2010/09/linux-file-system-structure/)
@@ -47,7 +47,7 @@ wasabi gets you best of both:
 
 --------------------------------------------------------------------------------
 
-## Use
+## use
 
 ### async
 
@@ -97,7 +97,7 @@ wasabi gets you best of both:
 >     </script>
 >
 
-## Generators
+## generators
 
 Naturally, `cd` into your project (for windows, use [cygwin](https://www.cygwin.com/))
 
