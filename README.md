@@ -28,15 +28,15 @@ Directory structures :eyes: are first thing _anyone_ sees in _every_ project.
 Good documentation makes a :star: great first impression and gives users a strong
 base to build on.
 
-Ascii-art is
+There a
+[handful](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard)
+[of](http://www.thegeekstuff.com/2010/09/linux-file-system-structure/)
+[approaches](https://developer.apple.com/library/mac/documentation/FileManagement/Conceptual/FileSystemProgrammingGuide/FileSystemOverview/FileSystemOverview.html)
+to this, but ascii-art is
 [the](https://scotch.io/tutorials/angularjs-best-practices-directory-structure)
-[de-facto](http://jekyllrb.com/docs/structure/)
+[_de facto_](http://jekyllrb.com/docs/structure/)
 [standard](http://www.tutorialspoint.com/ruby-on-rails/rails-directory-structure.htm)
-for this &mdash; ha, did you ever think you'd see that sentence? (
-you might also find
-[some](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard)
-[other](http://www.thegeekstuff.com/2010/09/linux-file-system-structure/)
-[approaches](https://developer.apple.com/library/mac/documentation/FileManagement/Conceptual/FileSystemProgrammingGuide/FileSystemOverview/FileSystemOverview.html))
+&mdash; did you think you'd ever see that sentence?
 
 Documenting with ascii-art is a quick-fix :wrench: for the developer and _not awesome&trade;_ for the user.
 Using pictures is just slighly better, with the side-effect of temporarily turning your dev environment
