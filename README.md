@@ -28,7 +28,7 @@ Directory structures are first thing _everyone_ :eyes: sees in _any_ project.
 Good documentation :books: makes a great first impression :star: and gives users a strong
 base to build on.
 
-There a
+There are a
 [handful](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard)
 [of](http://www.thegeekstuff.com/2010/09/linux-file-system-structure/)
 [approaches](https://developer.apple.com/library/mac/documentation/FileManagement/Conceptual/FileSystemProgrammingGuide/FileSystemOverview/FileSystemOverview.html)
