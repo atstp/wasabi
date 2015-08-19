@@ -54,6 +54,10 @@ to the project, so they know what to expect once they get it in their hands.
 
 --------------------------------------------------------------------------------
 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
 ## use
 
 ### async
@@ -124,8 +128,8 @@ _or_ launch a demo page (a local server with a demo of the current directory)
 
 ## big project?
 
-Indenting and commenting with `#`s is awesome for smaller projects;
-not so much when things get larger.
+Indented children and `#` comments are awesome for smaller projects. When projects get large,
+verbose naming and concise commenting is really convenient.
 
 So you can also do this:
 
