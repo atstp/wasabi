@@ -1,4 +1,6 @@
-## wasabi makes this :tada:
+![wasabi](http://atstp.github.io/wasabi/img/banner.png)
+
+## makes this :tada:
 
 ![wasabi in action](http://atstp.github.io/wasabi/img/demo.gif?clearcache=1)
 
@@ -22,7 +24,7 @@
         project-name  # run this to generate a new instance
                       # of my-project on your machine
 
-## ![about wasabi](http://atstp.github.io/wasabi/img/banner.png)
+## about
 
 Directory structures are first thing _everyone_ sees :eyes: in _any_ project.
 
@@ -43,7 +45,7 @@ environment into :finnadie: MS Paint.
 wasabi gets you best of both:
 
   * :eyeglasses: readable and maintainable source text
-  * :bulb: a pleasant, intuitive interface
+  * :bulb: a pleasant, intuitive browser interface
 
 --------------------------------------------------------------------------------
 
@@ -145,3 +147,29 @@ So you can also do this:
       run this to generate a new instance of my-project on your machine
 
 ### [more](http://atstp.github.io/wasabi/)
+
+>
+> #### colophon
+>
+> A metaphor: **if your project is sushi, this is wasabi**; it won't make a bad project
+> good, but it will make any project more palatable.
+>
+> I made this library because, when jumping into a new project, as either a contributor or a user,
+> for fun or in the workplace, it helps _tremendously_ to know what's where.
+>
+>   * when contributors start out more familiar with your project, they'll hunt down bugs quicker
+>   * when users understand your framework's structure _before_ it's on their machine, they'll
+>     be more likely to use it
+>   * when new employees don't have to "explore the system and get familiar" they'll be able to start
+>     what they're excited for earlier
+>
+> Projects are diverse, so wasabi is built to be convenient for anyone.
+>
+>   * old-school user? no need to fuss with the js, the source looks good monospaced
+>   * github pages fan? [here's a demo!](http://atstp.github.io/wasabi_and_jekyll/)
+>   * js wizard? when you create a wasabi project, it exposes an api &mdash; hack away!
+>
+> If I botched it with any of this or if you have an idea for improvement, let me know with an
+> [issue](https://github.com/atstp/wasabi/issues). if you've got a sweet new feature or a bug-fix,
+> pull requests are welcome!
+>
