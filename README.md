@@ -45,7 +45,9 @@ into MS Paint :finnadie:.
 wasabi gets you best of both:
 
   * :eyeglasses: readable and maintainable source text
+    &mdash; to live in your repo for reference and maintenance
   * :bulb: a pleasant, intuitive interface
+    &mdash; when you want to render it in the browser
 
 and fits an important spot in project :seedling: growth: introducing :wave: people
 to the project, so they know what to expect once they get it in their hands.
@@ -119,5 +121,30 @@ _or_ launch a demo page (a local server with a demo of the current directory)
 
     curl http://atstp.github.io/wasabi/demo-page.sh > demo-this-project.sh
     bash demo-this-project.sh
+
+## big project?
+
+Indenting and commenting with `#`s is awesome for smaller projects;
+not so much when things get larger.
+
+So you can also do this:
+
+    my-project/
+    my-project/bowser.json
+      mario's least favorite package manager
+
+    my-project/src/
+    my-project/src/helper.js
+      be familiar with it's brother main.js first,
+      this file houses a good bit of sugar for the core features
+    my-project/src/main.js
+      the core of the app, supports x, y, and z
+
+    my-project/dist/
+    my-project/dist/build.js      # link to me for testing
+    my-project/dist/build.min.js  # tiny and obfuscated, for production
+    my-project/bin/
+    my-project/bin/project-name
+      run this to generate a new instance of my-project on your machine
 
 ### [more](http://atstp.github.io/wasabi/)
