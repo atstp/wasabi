@@ -128,8 +128,8 @@ _or_ launch a demo page (a local server with a demo of the current directory)
 
 ## big project?
 
-Indented children and `#` comments are awesome for smaller projects. When projects get large,
-verbose naming and concise commenting is really convenient.
+Indented children and `#` comments are great for smaller projects. For larger
+projects, verbose names and concise comments make maintenance and reference easier.
 
 So you can also do this:
 
@@ -141,6 +141,7 @@ So you can also do this:
     my-project/src/helper.js
       be familiar with it's brother main.js first,
       this file houses a good bit of sugar for the core features
+
     my-project/src/main.js
       the core of the app, supports x, y, and z
 
@@ -148,6 +149,7 @@ So you can also do this:
     my-project/dist/build.js      # link to me for testing
     my-project/dist/build.min.js  # tiny and obfuscated, for production
     my-project/bin/
+
     my-project/bin/project-name
       run this to generate a new instance of my-project on your machine
 
