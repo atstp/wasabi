@@ -22,7 +22,7 @@
         project-name  # run this to generate a new instance
                       # of my-project on your machine
 
-## about
+## ![about wasabi](http://atstp.github.io/wasabi/img/banner.png)
 
 Directory structures are first thing _everyone_ sees :eyes: in _any_ project.
 
@@ -117,7 +117,7 @@ _or_ launch a demo page (a local server with a demo of the current directory)
     curl http://atstp.github.io/wasabi/demo-page.sh > demo-this-project.sh
     bash demo-this-project.sh
 
-## big project?
+## large projects
 
 Indented children and `#` comments are great for smaller projects. For larger
 projects, verbose names and concise comments make maintenance and reference easier.
