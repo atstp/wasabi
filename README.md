@@ -2,7 +2,7 @@
 
 ![wasabi in action](http://atstp.github.io/wasabi/img/demo.gif?clearcache=1)
 
-## from plain text :page_facing_up:
+## from readable text :page_facing_up:
 
     my-project/
       bowser.json # mario's least favorite package manager
@@ -24,14 +24,13 @@
 
 ## about
 
-Good documentation makes a great :star: first impression and gives users a strong base
-to build on. Directory structures are first thing _everyone_ sees :eyes: in _any_ project.
+Directory structures are first thing _everyone_ sees :eyes: in _any_ project.
 
 There are a
 [handful](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard)
 [of](http://www.thegeekstuff.com/2010/09/linux-file-system-structure/)
 [approaches](https://developer.apple.com/library/mac/documentation/FileManagement/Conceptual/FileSystemProgrammingGuide/FileSystemOverview/FileSystemOverview.html)
-people take, but ascii-art is
+to help users and contributors, but ascii-art is
 [the](https://scotch.io/tutorials/angularjs-best-practices-directory-structure)
 [_de facto_](http://jekyllrb.com/docs/structure/)
 [standard](http://www.tutorialspoint.com/ruby-on-rails/rails-directory-structure.htm)
@@ -39,17 +38,12 @@ people take, but ascii-art is
 
 Documenting with ascii-art is a quick-fix :wrench: for the developer and _not awesome&trade;_ for the user.
 Using pictures is a marginally better for the user, with the side-effect of temporarily turning your dev
-environment into MS Paint :finnadie:
+environment into :finnadie: MS Paint.
 
-wasabi gets you best of both :+1:
+wasabi gets you best of both:
 
   * :eyeglasses: readable and maintainable source text
-    &mdash; to live in your repo for reference and maintenance
   * :bulb: a pleasant, intuitive interface
-    &mdash; when you want to render it in the browser
-
-and fits an important spot in project growth: introducing people :wave:
-to the project, so they know what's where when they get it in their hands :rocket:
 
 --------------------------------------------------------------------------------
 
