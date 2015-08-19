@@ -24,35 +24,32 @@
 
 ## about
 
-Directory structures are first thing _everyone_ :eyes: sees in _any_ project.
-Good documentation :books: makes a great first impression :star: and gives users a strong
-base to build on.
+Good documentation makes a great :star: first impression and gives users a strong base
+to build on. Directory structures are first thing _everyone_ sees :eyes: in _any_ project.
 
 There are a
 [handful](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard)
 [of](http://www.thegeekstuff.com/2010/09/linux-file-system-structure/)
 [approaches](https://developer.apple.com/library/mac/documentation/FileManagement/Conceptual/FileSystemProgrammingGuide/FileSystemOverview/FileSystemOverview.html)
-to this, but ascii-art is
+people take, but ascii-art is
 [the](https://scotch.io/tutorials/angularjs-best-practices-directory-structure)
 [_de facto_](http://jekyllrb.com/docs/structure/)
 [standard](http://www.tutorialspoint.com/ruby-on-rails/rails-directory-structure.htm)
 &mdash; did you think you'd ever read that sentence?
 
 Documenting with ascii-art is a quick-fix :wrench: for the developer and _not awesome&trade;_ for the user.
-Using pictures is just slighly better, with the side-effect of temporarily turning your dev environment
-into MS Paint :finnadie:.
+Using pictures is a marginally better for the user, with the side-effect of temporarily turning your dev
+environment into MS Paint :finnadie:
 
-wasabi gets you best of both:
+wasabi gets you best of both :+1:
 
   * :eyeglasses: readable and maintainable source text
     &mdash; to live in your repo for reference and maintenance
   * :bulb: a pleasant, intuitive interface
     &mdash; when you want to render it in the browser
 
-and fits an important spot in project :seedling: growth: introducing :wave: people
-to the project, so they know what to expect once they get it in their hands.
-
---------------------------------------------------------------------------------
+and fits an important spot in project growth: introducing people :wave:
+to the project, so they know what's where when they get it in their hands :rocket:
 
 --------------------------------------------------------------------------------
 
