@@ -3,68 +3,9 @@ layout: html
 ---
 {% include header.html %}
 <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/css/wasabi.css">
-<style>
-  .demo-items{
-    width: 100%;
-    overflow-x: scroll;
-    margin: 0;
-    margin-bottom: 20px;
-    padding: 0;
-    }
-    .demo-item{
-      display: inline-block;
-      }
-      .demo-item-link{
-        display: block;
-        width: 200px;
-        height: 50px;
-        line-height: 50px;
-
-        text-align: center;
-
-        opacity: .6;
-        transition-duration: .2s;
-        color: #555;
-        text-decoration: none;
-        text-decoration: none;
-        }
-        .demo-item-link:hover{
-          color: #222;
-          background-color: #eee;
-          opacity: 1;
-          }
-  .demo-header{
-    position: absolute;
-    top: 70px;
-    left: 20px;
-    max-width: 300px;
-    }
-    .demo-header p{ margin: 10px 0;}
-    .header-credits{
-      opacity: .5;
-      }
-    .page-header{
-      font-size: 30px;
-      margin: 0;
-      }
-    .page-description{
-      }
-</style>
-
 <div class="container">
 
-<nav class="">
-  <ul class="demo-items">
-  {% for demo in site.demos %}
-    <li class="demo-item">
-      <a href="{{ site.baseurl }}{{demo.url}}"
-         class="demo-item-link">
-        {{demo.name}}
-      </a>
-    </li>
-  {% endfor %}
-  </ul>
-</nav>
+{% include demo-header.html %}
 
 <header class="demo-header">
   <h1 class="page-header">{{ page.name }}</h1>
