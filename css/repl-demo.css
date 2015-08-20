@@ -185,8 +185,8 @@ textarea#demo-area::selection{
   }
 
 .dummy-documentation{
-  opacity: 0;
   opacity: .2;
+  opacity: 0;
   max-width: 800px;
   padding: 0 50px;
   height: 100px;
