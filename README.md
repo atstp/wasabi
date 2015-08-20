@@ -99,24 +99,6 @@ take it for a [test drive](http://atstp.github.io/wasabi/) first
 >     </script>
 >
 
-## generators
-
-Naturally, `cd` into your project (for windows, use [cygwin](https://www.cygwin.com/))
-
-    cd ~/path/to/my/project
-
-_then_ make a boilerplate
-
-    curl http://atstp.github.io/wasabi/boilerplate.sh | sh
-
-    # optionally, redirect that to a file
-    curl http://atstp.github.io/wasabi/boilerplate.sh | sh >> awesome-project.wasabi.txt
-
-_or_ launch a demo page (a local server with a demo of the current directory)
-
-    curl http://atstp.github.io/wasabi/demo-page.sh > demo-this-project.sh
-    bash demo-this-project.sh
-
 ## large projects
 
 Indented children and `#` comments are great for smaller projects. For larger
@@ -143,6 +125,34 @@ So you can also do this:
 
     my-project/bin/project-name
       run this to generate a new instance of my-project on your machine
+
+## generators
+
+typing out every entry for your project would be nuts, so wasabi provides a few tiny scripts
+to make this a breeze.
+
+    cd ~/path/to/my/project
+
+    # if you like the indented lists (above)
+    curl http://atstp.github.io/wasabi/indented.sh | sh
+
+    # or if your big project needs a detailed list
+    curl http://atstp.github.io/wasabi/boilerplate.sh | sh
+
+    # once you find what you like, redirect that to a file wher you can start editing
+    curl http://atstp.github.io/wasabi/boilerplate.sh | sh >> awesome-project.wasabi.txt
+                                       # ^
+                                       # | if you prefer the indented list
+                                       #   use `indented.sh' instead
+
+feeling fancy?
+
+    # optionally, you can launch a demo page for your project!
+    # there's an interactive prompt, so you can <ctrl-c> out at any time
+    # and it launches a simple python server at the end!
+    curl http://atstp.github.io/wasabi/demo-page.sh > demo-this-project.sh
+    bash demo-this-project.sh
+
 
 --------------------------------------------------------------------------------
 
