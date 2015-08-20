@@ -21,11 +21,9 @@ demo.addEventListener('input', rep ,false);
 
 demo.value = indentedSource;
 rep();
-/* too obnoxious
 demo.focus();
 demo.selectionEnd = demo.value.indexOf("\n");
 demo.selectionStart = demo.value.indexOf("# ") + 2;
-*/
 
 function rep(e) {
   var entriesOnly = demo.value.trim().replace(/(\n?(\w*#.*)?$)+/m, '').trim();

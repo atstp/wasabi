@@ -7,6 +7,30 @@ layout: html
 
 {% include demo-header.html %}
 
+<style>
+  .demo-header{
+    position: absolute;
+    top: 70px;
+    left: 20px;
+    max-width: 300px;
+    }
+    @media ( max-width: 800px ){
+      .demo-header{
+        display: none;
+        }
+    }
+    .demo-header p{ margin: 10px 0;}
+    .header-credits{
+      opacity: .5;
+      }
+    .page-header{
+      font-size: 30px;
+      margin: 0;
+      }
+    .page-description{
+      }
+</style>
+
 <header class="demo-header">
   <h1 class="page-header">{{ page.name }}</h1>
   <p class="header-credits">

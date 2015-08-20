@@ -10,11 +10,6 @@ button{
   margin-left: 15px;
   padding: 0;
   }
-.shadowed{
-  /*
-  box-shadow: 0 0 8px;
-  */
-  }
 
 .logo{
   height: 50px;
@@ -54,7 +49,7 @@ button{
   position: relative;
   }
 #wasabi-editor{
-  max-width: 500px;
+  max-width: 100%;
   margin: auto;
 }
 .mimic-editor{
@@ -65,7 +60,6 @@ button{
   width: 100%;
   overflow: hidden;
   margin-top: 15px;
-  border-radius: 10px;
   }
   @media (max-width: 1700px){
     .mimic-editor{
@@ -88,8 +82,7 @@ button{
     background: inherit;
     color: inherit;
     min-height: 400px;
-    max-height: 800px;
-    height: 500px;
+    height: 700px;
     }
 textarea#demo-area::-moz-selection{
   background-color: #555;
@@ -192,14 +185,14 @@ textarea#demo-area::selection{
   }
 
 .dummy-documentation{
+  opacity: 0;
   opacity: .2;
   max-width: 800px;
   padding: 0 50px;
   height: 100px;
   overflow: hidden;
   margin: auto;
-  filter: blur(2px);
-  opacity: 0;
+  filter: blur(1.5px);
   }
 
 @media (max-width: 1000px){
@@ -209,179 +202,3 @@ textarea#demo-area::selection{
   .output-area.columns{
     }
 }
-
-
-
-/*
- * FIRST BANNER: demo app and boilerplate script
- */
-
-
-.curl-header,
-.demo-title{
-  padding-top: 40px;
-  }
-.demo-title{
-  position: absolute;
-  font-size: 22px;
-  margin: 0;
-  padding: 40px 0px;
-  top: 0;
-  left: -80px;
-  }
-.demo-name,
-.demo-frame{
-  transition-duration: .5s;
-  }
-.demo-name{
-  display: block;
-  position: absolute;
-  text-decoration: none;
-  color: transparent;
-  padding: 20px;
-  font-weight: bold;
-  }
-.demo-page-content{
-  width: 500px;
-  height: 400px;
-  }
-.demo-frame{
-  display: block;
-  position: absolute;
-  height: 300px;
-  width: 400px;
-
-  background-position: right top;
-  background-repeat: no-repeat;
-  background-size: contain;
-  }
-  .demo-frame:hover{
-    transform: scale(1.05);
-    }
-  .demo-frame.demo-source{
-    bottom:0;
-    left:0;
-    backgroud-position: bottom left;
-    /* background-image: url("/img/browser-demo-source.png"); set in the html for url stuff */
-    }
-    .demo-frame.demo-source .demo-name{
-      bottom:0;
-      left:0;
-      }
-  .demo-frame.demo-page{
-    top:0;
-    right:0;
-    backgroud-position: top right;
-    /* background-image: url("/img/browser-demo.png"); set in the html for url stuff */
-    }
-    .demo-frame.demo-page .demo-name{
-      top:0;
-      right:0;
-      }
-
-
-
-.curl-header{
-  font-size: 22px;
-  font-weight: bold;
-  }
-.curl-shell{
-  background: #222;
-  color: #ddd;
-  font-family: monospace;
-  padding: 8px;
-  overflow-x: scroll;
-  border-radius: 5px;
-  }
-  .curl-shell li{
-    list-style-type: none;
-    font-size: 15px;
-    padding: 6px 0;
-    white-space: nowrap;
-    }
-    .curl-shell li:before{
-      content: '$ ';
-      }
-.next-steps{
-  font-size: 18px;
-  text-align: center;
-  vertical-align: middle;
-  text-align: right;
-  margin-top: 30px;
-  padding: 0;
-  }
-  .next-steps .arrow-indicator{
-    font-weight: bold;
-    font-size: 30px;
-    vertical-align: middle;
-    }
-  .next-steps li{
-    vertical-align: middle;
-    padding-top: 0;
-    list-style-type: none;
-    }
-
-.demo-page-area,
-.curl-area{
-  position: relative;
-  height: 500px;
-  }
-.curl-content,
-.demo-page-content{
-  max-width: 500px;
-  position: relative;
-  margin: auto;
-  margin-top: 50px;
-  }
-.hide-sm{ display: inline; }
-.hide-lg{ display: none; }
-@media (max-width: 1000px){
-  #banners .demo-page-area,
-  #banners .curl-area{
-    width: 100%;
-    }
-  .hide-sm { display: none; }
-  .hide-lg { display: inline; }
-}
-
-#banners{
-  position: relative;
-  z-index: 10;
-  background-color: #CCC;
-  border: solid 0px transparent;
-  }
-  #banners .getting-started {
-    position: relative;
-    z-index: 500;
-    }
-  #banners .help{
-    width: 100%;
-    background-color: #CCCC9A;
-    text-align: center;
-    position: relative;
-    }
-    #banners .help .cta{
-      width: 100%;
-      }
-      .download-links{
-        text-align: center;
-        margin: 0;
-        padding: 15px 0;
-        opacity: .5;
-        transition-duration: .3s;
-        }
-        .download-links:hover{
-          opacity: 1;
-          }
-      #banners .help .cta .project-name{
-        letter-spacing: 5px;
-        margin-bottom: 0;
-        }
-      #banners .help .cta .tagline{
-        width: auto;
-        letter-spacing: 1.5px;
-        }
-      #banners .help .cta .icon{
-        max-width:200px;
-        height: auto;
-        }
