@@ -1,4 +1,4 @@
-<script src="{{ site.url }}{{ site.baseurl }}/js/site.js"></script>
+<script src="{{ site.baseurl }}/js/site.js"></script>
 {% for script in page.scripts %}
-<script src="{{script | prepend:site.baseurl | prepend:site.url }}"></script>
+<script src="{{script | prepend:site.baseurl}}"></script>
 {% endfor %}

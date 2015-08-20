@@ -1,7 +1,7 @@
 ---
 layout: basic
 styles:
-  - '/css/demo.css'
+  - '/css/repl-demo.css'
   - '/css/wasabi.css'
 scripts:
   - '/js/wasabi.js'
@@ -19,21 +19,18 @@ scripts:
           <div class="mimic-editor">
             <textarea spellcheck=false id="demo-area"></textarea>
           </div>
-          <div class="editor-prompt">
-            wasabi text in here &rarr;
-          </div>
           <div class="example-buttons">
             <button id="try-detailed">detailed</button>
             <button id="try-indented">indented</button>
           </div>
         </div>
-        <div class="content-below-arrow"></div>
       </div>
 
       <div class="small-screen-note">
         <h4 class="slogan">if your project is sushi, this is</h4>
         <h1 class="site-name">wasabi</h1>
-        <p>everything here was generated with <a href="/examples/simple-detailed/">this</a> text file</p> </div>
+        <p>everything here was generated with <a href="/examples/simple-detailed/">this</a> text file</p>
+      </div>
 
       <div class="output-area columns seven">
         <p class="dummy-documentation">
@@ -77,6 +74,7 @@ root/ # entry comments can be inline after a '#'
     fileTwo*    # '*' can identify executables
     fileThree@  # '@' can identify symlinks
 </script>
+
 <script id="detailed" type="text/wasabi">
 root/
   this is a comment on 'root'

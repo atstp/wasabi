@@ -6,11 +6,11 @@
   <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
   <meta name="description" content="{% if page.summary %}{{ page.summary }}{% else %}{{ site.description }}{% endif %}">
 
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/css/normalize.css">
-  <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/css/base.css">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/normalize.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/base.css">
   <link rel="shortcut icon" href="favicon.ico">
   {% for stylesheet in page.styles %}
-    <link rel="stylesheet" href="{{ stylesheet | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="stylesheet" href="{{ stylesheet | prepend: site.baseurl }}">
   {% endfor %}
 </head>
