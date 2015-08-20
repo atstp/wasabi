@@ -147,19 +147,19 @@ So you can also do this:
 #### colophon
 
 If your project is sushi, this is wasabi; it won't make a bad project good, but
-it will make any project more palatable.
+it should make any project more palatable.
 
 I made this library because, when jumping into a new project, regardless of circumstance &mdash;
-contributing, using, for work, or for fun &mdash; it helps _tremendously_ to know what's where.
+as a contributor or user, for work or for fun &mdash; it helps _tremendously_ to know what's where.
 
-  * when contributors start out with a full picture of your project, they'll hunt down bugs faster
+  * when **contributors** start out with a full picture of your project, they'll hunt down bugs faster
     and more readily
-  * when users understand your framework's structure _before_ it's on their machine, they'll be more
+  * when **users** understand your framework's structure _before_ it's on their machine, they'll be more
     likely to choose it
-  * when new employees don't have to "have a look around" the system to get familiar they'll be
-    able to start what they're excited for sooner
+  * when new **employees** don't need to "have a look around" the system to get familiar they'll be
+    able to start what they were hired for (and want to do) sooner
 
-Projects are diverse, so wasabi is built to be convenient for anyone.
+Projects and maintainers are diverse, so wasabi is built to be convenient for anyone.
 
   * old-school user? no need to fuss with the js, the source looks good monospaced
   * github pages fan? [here's a demo!](http://atstp.github.io/wasabi_and_jekyll/)
