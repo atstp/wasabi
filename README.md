@@ -22,7 +22,7 @@
         project-name  # run this to generate a new instance
                       # of my-project on your machine
 
-## real talk.
+## about
 
 Directory structures are first thing _everyone_ sees :eyes: in _any_ project.
 
@@ -45,11 +45,11 @@ wasabi gets you best of both:
   * :eyeglasses: readable and maintainable source text
   * :bulb: a pleasant, intuitive browser interface
 
+please, take it for a [test drive](http://atstp.github.io/wasabi/)!
+
 --------------------------------------------------------------------------------
 
 ## use
-
-take it for a [test drive](http://atstp.github.io/wasabi/) first
 
 ### async
 
@@ -95,7 +95,8 @@ take it for a [test drive](http://atstp.github.io/wasabi/) first
 >
 >     <script src="wasabi.js"></script>
 >     <script>
->       Wasabi.project('#project-structure');
+>       var myProj = new Wasabi.Project('#project-structure');
+>       myProj.replace();
 >     </script>
 >
 
