@@ -1,0 +1,88 @@
+---
+name: linux
+description: x
+---
+linux/
+  Reffered to as '/'. Info here is originally from
+  http://www.tldp.org/LDP/intro-linux/html/sect_03_01.html
+
+linux/bin/
+  Common programs, shared by the system, the system administrator and the users.
+
+linux/boot/
+  The startup files and the kernel, vmlinuz. In some recent distributions also grub data. Grub is the GRand Unified Boot loader and is an attempt to get rid of the many different boot-loaders we know today.
+
+linux/dev/
+  Contains references to all the CPU peripheral hardware, which are represented as files with special properties.
+
+linux/etc/
+  Most important system configuration files are in /etc, this directory contains data similar to those in the Control Panel in Windows
+
+linux/home/
+  Home directories of the common users.
+
+linux/initrd/
+  (on some distributions) Information for booting. Do not remove!
+
+linux/lib/
+  Library files, includes files for all kinds of programs needed
+  by the system and the users.
+
+linux/lost+found/
+  Every partition has a lost+found in its upper directory.
+  Files that were saved during failures are here.
+
+linux/misc/
+  For miscellaneous purposes.
+
+linux/mnt/
+  Standard mount point for external file systems, e.g. a
+  CD-ROM or a digital camera.
+
+linux/net/
+  Standard mount point for entire remote file systems
+
+linux/opt/
+  Typically contains extra and third party software.
+
+linux/proc/
+  A virtual file system containing information about system resources.
+  More information about the meaning of the files in proc is obtained by
+  entering the command man proc in a terminal window.
+  The file proc.txt discusses the virtual file system in detail.
+
+linux/root/
+  The administrative user's home directory.
+  Mind the difference between /, the root directory and /root,
+  the home directory of the root user.
+
+linux/sbin/
+  Programs for use by the system and the system administrator.
+
+linux/tmp/
+  Temporary space for use by the system, cleaned upon reboot,
+  so don't use this for saving any work!
+
+linux/usr/
+  Programs, libraries, documentation etc. for all user-related programs.
+
+linux/usr/bin/
+  Contains binary files for user programs. If you can’t find a user
+  binary under /bin, look under /usr/bin. For example: at, awk, cc, less, scp
+
+linux/usr/sbin/
+  Contains binary files for system administrators. If you can’t find a
+  system binary under /sbin, look under /usr/sbin.
+  For example: atd, cron, sshd, useradd, userdel
+
+linux/usr/lib/
+  Contains libraries for /usr/bin and /usr/sbin
+
+linux/usr/local/
+  Contains users programs that you install from source.
+
+linux/var/
+  Storage for all variable files and temporary files created by users,
+  such as log files, the mail queue, the print spooler area, space for
+  temporary storage of files downloaded from the Internet, or to keep an
+  image of a CD before burning it.

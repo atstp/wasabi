@@ -1,0 +1,451 @@
+---
+name: wordpress
+description: x
+---
+wordpress/index.php
+  Core WordPress index. This is the file that produces the blog output.
+
+wordpress/license.txt
+  The WordPress GPL license file.
+
+wordpress/my-hacks.php
+  Contains supplemental routines that are processed before output is produced.
+  This is not included in the default install, but is referenced by the
+  administration page if available.
+
+wordpress/readme.html
+  Pre-install information about WordPress.
+
+wordpress/wp-atom.php
+  Produces Atom syndication output.
+
+wordpress/wp-blog-header.php
+  Decides what to display based on the parameters that are passed to the blog.
+  Included from any page that wants to display WordPress content.
+
+wordpress/wp-cron.php
+
+wordpress/wp-comments-post.php
+  Receives posted comments and adds them to the database.
+
+wordpress/wp-commentsrss2.php
+  Produces RSS2 syndication output of post comments.
+
+wordpress/wp-config-sample.php
+  A sample configuration file for connecting WordPress to your MySQL database.
+
+wordpress/wp-config.php
+  The actual configuration file used to connect WordPress to your MySQL database.
+  This is not included in the default install, but must exist for successful operation of WordPress.
+  You may need to edit this file to modify certain configuration settings.
+
+wordpress/wp-feed.php
+  Decides the type of feed to produce based on a request and re-routes to the correct feed-producing file.
+
+wordpress/wp-links-opml.php
+  Produces OPML output of Links that were added to the blog via the WordPress admin menu.
+
+wordpress/wp-login.php
+  The WordPress login page for registered users.
+
+wordpress/wp-mail.php
+  Used for obtaining blog posts that were submitted via email.
+  The URL of this file is usually added to a cron job so that it is
+  regularly retrieved, so that new email posts are accepted.
+
+wordpress/wp-pass.php
+  Accepts the password needed to view password-protected posts,
+  then redirects back to the protected post.
+
+wordpress/wp-rdf.php
+  Produces RDF syndication output.
+
+wordpress/wp-register.php
+  Allows new users to register usernames in WordPress via an online form.
+
+wordpress/wp-rss.php
+  Produces RSS syndication output.
+
+wordpress/wp-rss2.php
+  Produces RSS2 syndication output.
+
+wordpress/wp-settings.php
+  Performs various pre-execution routines, including checking for correct installation,
+  including auxiliary functions, applying user plugins, initializing execution timers, etc.
+
+wordpress/wp-trackback.php
+  Handles incoming trackback requests.
+
+wordpress/wp.php
+  A very simple template for displaying blog posts.
+  Does not include a lot of the fancy but fragile features of index.php.
+
+wordpress/xmlrpc.php
+  Handles incoming xmlrpc commands. Among other things, this allows posting
+  without using the built-in web-based administrative interface.
+
+wordpress/wp-admin/
+
+wordpress/wp-admin/admin.php
+  The core of the admin files. Connects to the database, integrates
+  the dynamic menu data, displays non-core console (dashboard) pages, etc.
+
+wordpress/wp-admin/admin-db.php
+
+wordpress/wp-admin/admin-footer.php
+  Contains the bottom of the admin console. Included from each of the console pages.
+
+wordpress/wp-admin/admin-functions.php
+  Contains various functions used by the admin console.
+
+wordpress/wp-admin/admin-header.php
+  Contains the top half of the admin console. Includes menu-header.php for menu logic.
+
+wordpress/wp-admin/bookmarklet.php
+  The pop-up page that is displayed when using the bookmarklet.
+  Uses the default edit-form.php page for post input.
+
+wordpress/wp-admin/categories.php
+  Admin console page for category management.
+
+wordpress/wp-admin/cat-js.php
+
+wordpress/wp-admin/edit.php
+  Admin console for post management.
+
+wordpress/wp-admin/edit-comments.php
+  Admin console page for comment management.
+
+wordpress/wp-admin/edit-form-advanced.php
+  Admin console page for the advanced post editing form. Included from post.php.
+
+wordpress/wp-admin/edit-form.php
+  Admin console page for the simple post editing form. Included from post.php.
+
+wordpress/wp-admin/edit-form-comment.php
+  Edits a specific post comment.
+
+wordpress/wp-admin/edit-form-ajax-cat.php
+
+wordpress/wp-admin/edit-link-form.php
+
+wordpress/wp-admin/edit-page-form.php
+  Admin console page for editing pages. Included from post.php and page-new.php.
+
+wordpress/wp-admin/edit-pages.php
+  Admin console for page management.
+
+wordpress/wp-admin/execute-pings.php
+wordpress/wp-admin/import.php
+
+wordpress/wp-admin/index.php
+  The administrative default page. Redirects to an appropriate page based on user access.
+
+wordpress/wp-admin/inline-uploading.php
+
+wordpress/wp-admin/install-helper.php
+  A set of functions for database maintenance,
+  including the popular-in-plugins maybe_create_table() and maybe_add_column().
+
+wordpress/wp-admin/install.php
+  Installs WordPress.
+
+wordpress/wp-admin/link-add.php
+  Admin console page to add links.
+
+wordpress/wp-admin/link-categories.php
+  Admin console page for link category management.
+
+wordpress/wp-admin/link-import.php
+  Admin console page used to import links.
+
+wordpress/wp-admin/link-manager.php
+  Admin console page for link management.
+
+wordpress/wp-admin/link-parse-opml.php
+  Contains functions used to parse an OPML file when importing links.
+
+wordpress/wp-admin/list-manipulation.js
+wordpress/wp-admin/list-manipulation.php
+
+wordpress/wp-admin/menu-header.php
+  The file used to display the menu in the admin interface.
+
+wordpress/wp-admin/menu.php
+  The default admin menu structure.
+
+wordpress/wp-admin/moderation.php
+  Contains functions related to comments moderation.
+
+wordpress/wp-admin/options.php
+  Admin console file that can be used to change every settings in one update.
+
+wordpress/wp-admin/options-discussion.php
+  Admin console page to manage options regarding comments and trackbacks.
+
+wordpress/wp-admin/options-general.php
+  Admin console page to manage options regarding basic configuartion settings.
+
+wordpress/wp-admin/options-head.php
+wordpress/wp-admin/options-misc.php
+  Admin console page to manage options regarding file uploads,
+  link tracking and support for custom "hacks".
+
+wordpress/wp-admin/options-permalink.php
+  Admin console page to manage options regarding permalinks.
+
+wordpress/wp-admin/options-reading.php
+  Admin console page to manage options regarding how the information from your site is
+  sent to a reader's web browser or other application.
+
+wordpress/wp-admin/options-writing.php
+  Admin console page to manage options regarding the interface with which you write new posts.
+
+wordpress/wp-admin/page-new.php
+  Admin console page to create a new page.
+
+wordpress/wp-admin/plugin-editor.php
+  Admin console page to edit a plugin file.
+
+wordpress/wp-admin/plugins.php
+  Admin console page to manage plugins.
+
+wordpress/wp-admin/post.php
+  Admin console page to create a new post.
+
+wordpress/wp-admin/profile-update.php
+wordpress/wp-admin/profile.php
+  Admin console page to manage your profile.
+
+wordpress/wp-admin/setup-config.php
+  Admin console page to create the wp-config.php file for the first time.
+
+wordpress/wp-admin/sidebar.php
+wordpress/wp-admin/templates.php
+  Admin console page to edit any server-writeable file.
+
+wordpress/wp-admin/theme-editor.php
+  Admin console page to edit any file within a specific theme.
+
+wordpress/wp-admin/themes.php
+  Admin console page to manage themes.
+
+wordpress/wp-admin/update-links.php
+wordpress/wp-admin/upgrade-functions.php
+  Contains functions related to version upgrading.
+
+wordpress/wp-admin/upgrade-schema.php
+  Contains default MySQL tables structure and default options, used when upgrading.
+
+wordpress/wp-admin/upgrade.php
+  Admin console page to upgrade froma lower version to a higher one.
+
+wordpress/wp-admin/user-edit.php
+  Admin console page to edit a user.
+
+wordpress/wp-admin/users.php
+  Admin console page to manage users.
+
+wordpress/wp-admin/wp-admin.css
+  The default stylesheet for the administrative console.
+
+wordpress/wp-admin/xfn.js
+wordpress/wp-admin/images/
+  This directory holds images associated and used by WordPress in the Administration Panels.
+
+wordpress/wp-admin/images/box-bg.gif
+wordpress/wp-admin/images/boxbg-left.gif
+wordpress/wp-admin/images/boxbg-right.gif
+wordpress/wp-admin/images/box-butt.gif
+wordpress/wp-admin/images/box-butt-left.gif
+wordpress/wp-admin/images/box-butt-right.gif
+wordpress/wp-admin/images/box-head.gif
+wordpress/wp-admin/images/box-head-left.gif
+wordpress/wp-admin/images/browse-happy.gif
+wordpress/wp-admin/images/fade-butt.png
+wordpress/wp-admin/images/notice.gif
+wordpress/wp-admin/images/toggle.gif
+wordpress/wp-admin/images/wordpres-logo.png
+
+wordpress/wp-admin/import/
+wordpress/wp-admin/import/b2.php
+  Used for importing posts from b2.
+
+wordpress/wp-admin/import/blogger.php
+  Used for importing posts from Blogger.
+
+wordpress/wp-admin/import/dotclear.php
+wordpress/wp-admin/import/greymatter.php
+  Used for importing posts from Greymatter.
+
+wordpress/wp-admin/import/livejournal.php
+  Used for importing posts from LiveJournal.
+
+wordpress/wp-admin/import/mt.php
+  Used for importing posts from Movable Type.
+
+wordpress/wp-admin/import/rss.php
+  Used to import posts via RSS.
+
+wordpress/wp-admin/import/textpattern.php
+  Used for importing posts from TextPattern.
+
+wordpress/wp-content/
+  This directory is typically not upgraded.
+  WordPress Themes and WordPress Plugins are stored in this directory.
+  The /wp-content/ directory is for user-supplied content.
+  WordPress upgrades are supposed to specifically avoid doing anything to any of
+  the contents of this directory, unless the user wants the
+  latest version of the default WordPress Themes.
+
+wordpress/wp-content/plugins/
+  All WordPress plugins are placed in this directory.
+  The default plugin shipped with WordPress is an example plugin mostly for plugin developers,
+  the Hello Dolly plugin, which displays random lines of the song "Hello Dolly."
+  Current versions also inlude the Akismet comment spam fighting WordPress Plugin as an option.
+
+wordpress/wp-content/plugins/hello.php
+  the Hello Dolly plugin, which displays random lines of the song "Hello Dolly."
+
+wordpress/wp-content/plugins/akismet.php
+  Current versions also inlude the Akismet comment spam fighting WordPress Plugin as an option.
+
+wordpress/wp-content/themes/
+  All WordPress Theme data is placed within this directory
+  in its own folder such as example.com/wp-content/themes/themedirectory/.
+
+wordpress/wp-content/themes/themedir/
+  All files associated with a WordPress Theme are stored in their own directory
+  under the wp-content/themes/themedir directory.
+
+wordpress/wp-content/themes/themedir/comments.php
+  Used to manage how the comments are displayed.
+
+wordpress/wp-content/themes/themedir/footer.php
+  Used to manage the footer of the pages.
+
+wordpress/wp-content/themes/themedir/header.php
+  Used to manage the header of every page.
+
+wordpress/wp-content/themes/themedir/index.php
+  Used to manage how the posts are displayed in your homepage.
+
+wordpress/wp-content/themes/themedir/search.php
+  Used to display a search form to search for entries.
+
+wordpress/wp-content/themes/themedir/sidebar.php
+  Used to manage the sidebar.
+
+wordpress/wp-content/themes/themedir/style.css
+  The main CSS file of WordPress.
+
+wordpress/wp-content/themes/themedir/images/
+  Some WordPress Themes store images in a subdirectory under their Theme folder.
+  For example, images used by the default theme are in wp-content/themes/default/images/.
+
+wordpress/wp-includes/
+wordpress/wp-includes/cache.php
+wordpress/wp-includes/capabilities.php
+
+wordpress/wp-includes/class-IXR.php
+  The Incutio XML-RPC Library. Contains XML RPC support functions.
+  Supplied by http://scripts.incutio.com/xmlrpc/
+
+wordpress/wp-includes/classes.php
+  Contains basic classes including the core post-fetching mechanism,
+  WP_Query, and the rewrite manger, WP_Rewrite.
+
+wordpress/wp-includes/class-pop3.php
+  Contains a support class for accessing POP mailboxes. Used by wp-mail.php
+
+wordpress/wp-includes/class-snoopy.php
+  Snoopy is a PHP class that simulates a web browser. It automates the task of
+  retrieving web page content and posting forms, for example.
+
+wordpress/wp-includes/comment-functions.php
+wordpress/wp-includes/default-filters.php
+wordpress/wp-includes/feed-functions.php
+
+wordpress/wp-includes/functions-compat.php
+  Contains support functions that are present in newer PHP versions that
+  are used only when running on older PHP versions.
+
+wordpress/wp-includes/functions-formatting.php
+  Contains support functions for cleaning XHTML and formatting text
+  correctly in certain character sets.
+
+wordpress/wp-includes/functions-post.php
+  Contains support functions for managing posts in the database,
+  querying user capabilities, fetching and writing comments, etc.
+
+wordpress/wp-includes/functions.php
+  Contains numerous vital support functions. Largest file in WordPress
+  -- almost double the next largest file.
+
+wordpress/wp-includes/gettext.php
+  Part of the PHP-gettext GPL translation library.
+
+wordpress/wp-includes/kses.php
+  Contains functions that are used to render and filter HTML in posts or comments.
+
+wordpress/wp-includes/links.php
+  Contains functions that are used to manage and use the Links feature of WordPress.
+
+wordpress/wp-includes/locale.php
+  Contains functions to replace default weekdays and months values.
+
+wordpress/wp-includes/pluggable-functions.php
+wordpress/wp-includes/registration-functions.php
+wordpress/wp-includes/rss-functions.php
+
+wordpress/wp-includes/streams.php
+  Contains a class to wrap file streams, string streams.
+
+wordpress/wp-includes/template-functions-author.php
+  Contains theme functions related to the author of a post or a comment.
+
+wordpress/wp-includes/template-functions-category.php
+  Contains theme functions related to categories.
+
+wordpress/wp-includes/template-functions-comment.php
+  Contains theme functions related to comments.
+
+wordpress/wp-includes/template-functions-general.php
+  Contains general theme functions.
+
+wordpress/wp-includes/template-functions-links.php
+  Contains theme functions related to links
+
+wordpress/wp-includes/template-functions-post.php
+  Contains theme functions related to posts.
+
+wordpress/wp-includes/template-functions.php
+  Contains all the "template-" files above.
+
+wordpress/wp-includes/template-loader.php
+
+wordpress/wp-includes/vars.php
+  Used to set miscellaneous variables.
+
+wordpress/wp-includes/version.php
+  Used to set the currently used WordPress version.
+
+wordpress/wp-includes/wp-db.php
+  Contains functions used to connect to the MySQL database.
+
+wordpress/wp-includes/wp-l10n.php
+  Contains functions used in multi-language support.
+
+wordpress/wp-includes/images/
+
+wordpress/wp-includes/images/smilies/
+  This is the directory that holds the smilies (emoticons) used in WordPress
+  if the option is turned on. See Using Smilies for the full list.
+
+wordpress/wp-includes/js/
+wordpress/wp-includes/js/quicktags.js
+  Javascript file that contains functions to manage the tags
+  toolbox when editing posts or pages.
+
+wordpress/wp-includes/js/tinymce/
+  This directory includes the files that run the Rich Text Editor in the Write Post panel.

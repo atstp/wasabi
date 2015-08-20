@@ -1,0 +1,46 @@
+---
+name: bigtree cms
+description: x
+---
+bigtree/
+bigtree/install.php
+  visit this page to intstall BigTree, after it's installed, you'll want to promptly delete the file
+
+bigtree/license.txt
+  BigTree's license Lesser GPL
+
+bigtree/bigtree.sql
+
+bigtree/example-site.sql
+  the database for the bigtree's example site
+
+bigtree/example-site/
+  a BigTree site that highlights a handful of bigtree's features, browse around to get familiar
+
+bigtree/core/
+  Contains core BigTree CMS, shouldn't be edited as this directory is replaced in CMS upgrades
+
+bigtree/templates/
+bigtree/templates/basic/
+  Contains your page template files
+
+bigtree/templates/routed/
+  for more info on how routed templates work, see https://www.bigtreecms.org/docs/dev-guide/templates/,
+
+bigtree/templates/callouts/
+  though this appears to be lacking detailed info on how routing occurs as well. I'll note that for future changes. /templates/callouts/ contains your Callout templates.
+
+bigtree/templates/layouts/
+  /templates/layouts/ contains your layout files, which are described on this page.
+
+bigtree/site/
+  This is your public root, basically what is exposed to your users.
+  Generally whatever you drop into this directory is accessible directly and is
+  used for CSS, JS, images, etc. You can also drop things like WordPress into here
+  if, for instance, you wanted /blog/ to be a WordPress blog.
+
+bigtree/cache/
+  This contains basic cache information and is used for temporary storage
+
+bigtree/extensions/
+  This is where installed (and built) extensions are housed.

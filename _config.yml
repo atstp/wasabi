@@ -9,5 +9,17 @@ url: "http://atstp.github.io"
 markdown: kramdown
 permalink: pretty
 exclude:
-  - node_modules
-  - dist
+  - "node_modules"
+  - "dist"
+  - "*_mine_*"
+
+collections:
+  demos:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "demos"
+    values:
+      layout: demo

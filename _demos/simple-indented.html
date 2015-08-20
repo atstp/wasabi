@@ -1,0 +1,29 @@
+---
+name: simple indented
+description: x
+---
+# this comment, before any entries, will be
+# recoreded as the project's comment
+
+# this file describes the
+#
+#   indented syntax
+
+root/ # entry comments can be inline after a '#'
+      # or on their own line, also after a '#'
+
+
+  readme.md # a child of, 'root/', it's indented
+            # under its parent. the width of the indent
+            # is unimportant, consistency is
+
+            # empty lines are ignored
+
+  usage.md  # indented syntax is nice for small projects
+            # and short comments.
+
+  src/          # directories MUST be identified with a '/'
+    fileOne.txt # files don't need any notation
+    fileTwo*    # '*' can identify executables
+    fileThree@  # '@' can identify symlinks
+
