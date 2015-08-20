@@ -37,8 +37,8 @@ to help users and contributors, but ascii-art is
 &mdash; did you think you'd ever read that sentence?
 
 Documenting with ascii-art is a quick-fix :wrench: for the developer and _not awesome&trade;_ for the user.
-Using pictures is a marginally better for the user, with the side-effect of temporarily turning your dev
-environment into :finnadie: MS Paint.
+Using pictures is marginally better, with the side-effect of temporarily turning your dev environment into
+:finnadie: MS Paint.
 
 wasabi gets you best of both:
 
@@ -48,6 +48,8 @@ wasabi gets you best of both:
 --------------------------------------------------------------------------------
 
 ## use
+
+take it for a [test drive](http://atstp.github.io/wasabi/) first
 
 ### async
 
@@ -149,15 +151,15 @@ So you can also do this:
 If your project is sushi, this is wasabi; it won't make a bad project good, but
 it should make any project more palatable.
 
-I made this library because, when jumping into a new project, regardless of circumstance &mdash;
+I made this library because, when jumping :running: into a new project, regardless of circumstance &mdash;
 as a contributor or user, for work or for fun &mdash; it helps _tremendously_ to know what's where.
 
-  * when **contributors** start out with a full picture of your project, they'll hunt down bugs faster
+  * when **contributors** start out with a full picture of your project, they'll hunt down bugs :bug: faster
     and more readily
   * when **users** understand your framework's structure _before_ it's on their machine, they'll be more
-    likely to choose it
-  * when new **employees** don't need to "have a look around" the system to get familiar they'll be
-    able to start what they were hired for (and want to do) sooner
+    likely to choose it :relaxed:
+  * when new **employees** :neckbeard: don't need to "have a look around" the system to get familiar they'll be
+    able to start what they were hired :dollar: for (and want to do) sooner
 
 Projects and maintainers are diverse, so wasabi is built to be convenient for anyone.
 
@@ -168,6 +170,3 @@ Projects and maintainers are diverse, so wasabi is built to be convenient for an
 If I botched it with any of this or if you have an idea for improvement, let me know with an
 [issue](https://github.com/atstp/wasabi/issues). if you've got a sweet new feature or a bug-fix,
 pull requests are welcome!
-
-
-...[more](http://atstp.github.io/wasabi/)
