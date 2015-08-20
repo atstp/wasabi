@@ -5,7 +5,7 @@ styles:
   - '/css/wasabi.css'
 scripts:
   - '/js/wasabi.js'
-  - '/js/repl-demo.js'
+  - '/js/welcome-demo.js'
 ---
 <div id="demos">
   <div class="container landing-section">
@@ -58,6 +58,78 @@ scripts:
 
     </div>
   </div>
+</div>
+
+<div id="banners">
+
+  <div class="container getting-started landing-segment row shadowed">
+    <div class="columns five landing-segment curl-area">
+
+      <div class="curl-content">
+        <h3 class="curl-header">
+          generating a wasabi boilerplate
+        </h3>
+        <ol class="curl-shell">
+          <li><code>cd path/to/my/project</code>
+          <li><code>curl atstp.github.io/wasabi/boilerplate.sh | sh</code>
+          <li><code># your boilerplate will print!</code>
+        </ol>
+        <p>now you've got options!</p>
+        <ul class="next-steps">
+          <li>
+              paste your boilerplate <a href="#wasabi-editor">above</a>
+              <span class="arrow-indicator">&uarr;</span>
+          <li><a href="github.com/atstp/wasabi.js/#demo-generator">document</a>
+              your own project
+              <span class="arrow-indicator">
+                  <span class="hide-sm"> &rarr; </span>
+                  <span class="hide-lg"> &darr; </span>
+              <span>
+        </ul>
+      </div>
+
+    </div>
+    <div class="columns five landing-segment demo-page-area">
+
+      <div class="demo-page-content">
+        <h3 class="demo-title">quick-start demo</h3>
+        <a  class="demo-frame demo-source"
+            style="background-image: url('{{ site.baseurl }}/img/browser-demo-source.png');"
+            href="view-source:{{ site.url }}{{ site.baseurl }}/minimal/">
+          <div class="demo-name">source</div>
+        </a>
+        <a  class="demo-frame demo-page"
+            style="background-image: url('{{ site.baseurl }}/img/browser-demo.png');"
+            href="{{ site.url }}{{ site.baseurl }}/minimal/">
+          <div class="demo-name">demo page</div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <h4 class="download-links">
+    [
+    <a href="{{ site.baseurl }}/js/wasabi.js" download="wasabi.js">download js</a>
+    |
+    <a href="{{ site.baseurl }}/css/wasabi.css" download="wasabi.css">download css</a>
+    ]
+  </h4>
+
+  <div class="landing-section help shadowed">
+    <div class="vert-align cta">
+      <img class="icon" src="{{ site.baseurl }}/img/icon.svg" alt="wasabi.js"/>
+      <h1 class="project-name">wasabi.js</h1>
+      <h5 class="tagline">support better documentation</h5>
+<!--
+<a href="https://twitter.com/share" class="twitter-share-button" data-text="better project structure docs">tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+<span style="width:10px;"> </span>
+-->
+<iframe src="https://ghbtns.com/github-btn.html?user=atstp&repo=wasabi&type=star&count=true" frameborder="0" scrolling="0" width="80px" height="20px"></iframe>
+    </div>
+  </div>
+
 </div>
 
 <script id="indented" type="text/wasabi">

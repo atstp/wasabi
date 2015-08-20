@@ -23,6 +23,10 @@
         text-decoration: none;
         text-decoration: none;
         }
+        .demo-item-link.home-link{
+          width: 100px;
+          }
+        .demo-item-link.active,
         .demo-item-link:hover{
           color: #222;
           background-color: #eee;
@@ -48,10 +52,15 @@
 
 <nav class="">
   <ul class="demo-items">
+    <li class="demo-item">
+      <a href="{{ site.baseurl }}/" class="demo-item-link home-link">
+        home
+      </a>
+    </li>
   {% for demo in site.demos %}
     <li class="demo-item">
       <a href="{{ site.baseurl }}{{demo.url}}"
-         class="demo-item-link">
+         class="demo-item-link {% if demo == page %} active {% endif %}">
         {{demo.name}}
       </a>
     </li>
