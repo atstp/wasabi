@@ -11,8 +11,6 @@ Wasabi.Entry.addPlugin('basic:control', function(entry){
 Wasabi.Project.addPlugin('basic:control', function(project){
   var nu = Wasabi.createEl;
 
-  var image     = nu('img.control-image');
-  var button    = nu('button.menu-button');
   var openBtn   = nu('button.open-button.control-button');
   var searchBar = nu('input.wasabi-search-bar');
   var container = project.dom.getContainer();
@@ -20,11 +18,8 @@ Wasabi.Project.addPlugin('basic:control', function(project){
 
   searchBar.setAttribute('type','text')
 
-  image.src = "https://s3.amazonaws.com/wasabi.js/icon.svg";
   openBtn.innerHTML = 'open all';
 
-  toolbar.appendChild(button);
-    button.appendChild(image);
   toolbar.appendChild(searchBar);
   toolbar.appendChild(openBtn);
 

@@ -1,4 +1,4 @@
-/* wasabi - v0.0.0 - 2015-07-31
+/* wasabi - v0.0.0 - 2015-08-21
 * atstp.github.io/wasabi.js/
 * Copyright (c) 2015 Dan <dan.ll.montague@gmail.com>; Licensed MIT */
 Wasabi = window.Wasabi || {};
