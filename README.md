@@ -49,7 +49,66 @@ please, take it for a [test drive](http://atstp.github.io/wasabi/)!
 
 --------------------------------------------------------------------------------
 
-## use
+## "syntax"
+
+calling it "syntax" is a bit pretentious; it's pretty simple.
+
+Basically you have two options, what you saw above, where 1) comments come after a "#" and
+2) children are indented beneath their parent. Like so:
+
+    my-project/
+      bowser.json # mario's least favorite package manager
+
+      src/
+        helper.js # be familiar with it's brother main.js
+                  # first, this file houses a good bit of
+                  # sugar for the core features
+
+        main.js   # the core of the app, supports x, y, and z
+
+That is great for smaller projects. For larger projects, verbose names and concise comments
+make maintenance and reference easier.
+
+    my-project/
+    my-project/bowser.json
+      mario's least favorite package manager
+
+    my-project/src/
+    my-project/src/helper.js
+      be familiar with it's brother main.js first,
+      this file houses a good bit of sugar for the core features
+    my-project/src/main.js
+      the core of the app, supports x, y, and z
+
+## generators
+
+typing out every entry for your project would be nuts, so wasabi provides a few tiny scripts
+to make this a breeze.
+
+    cd ~/path/to/my/project
+
+    # if you like the indented lists (above)
+    curl http://atstp.github.io/wasabi/indented.sh | sh
+
+    # or if your big project needs a detailed list
+    curl http://atstp.github.io/wasabi/boilerplate.sh | sh
+
+    # once you find what you like, redirect that to a file wher you can start editing
+    curl http://atstp.github.io/wasabi/boilerplate.sh | sh >> awesome-project.wasabi.txt
+                                       # ^
+                                       # | if you prefer the indented list
+                                       #   use `indented.sh' instead
+
+feeling fancy?
+
+    # optionally, you can launch a demo page for your project!
+    # there's an interactive prompt, so you can <ctrl-c> out at any time
+    # and it launches a simple python server at the end!
+    curl http://atstp.github.io/wasabi/demo-page.sh > demo-this-project.sh
+    bash demo-this-project.sh
+
+
+## in the broswer
 
 ### async
 
@@ -99,61 +158,6 @@ please, take it for a [test drive](http://atstp.github.io/wasabi/)!
 >       myProj.replace();
 >     </script>
 >
-
-## large projects
-
-Indented children and `#` comments are great for smaller projects. For larger
-projects, verbose names and concise comments make maintenance and reference easier.
-
-So you can also do this:
-
-    my-project/
-    my-project/bowser.json
-      mario's least favorite package manager
-
-    my-project/src/
-    my-project/src/helper.js
-      be familiar with it's brother main.js first,
-      this file houses a good bit of sugar for the core features
-
-    my-project/src/main.js
-      the core of the app, supports x, y, and z
-
-    my-project/dist/
-    my-project/dist/build.js      # link to me for testing
-    my-project/dist/build.min.js  # tiny and obfuscated, for production
-    my-project/bin/
-
-    my-project/bin/project-name
-      run this to generate a new instance of my-project on your machine
-
-## generators
-
-typing out every entry for your project would be nuts, so wasabi provides a few tiny scripts
-to make this a breeze.
-
-    cd ~/path/to/my/project
-
-    # if you like the indented lists (above)
-    curl http://atstp.github.io/wasabi/indented.sh | sh
-
-    # or if your big project needs a detailed list
-    curl http://atstp.github.io/wasabi/boilerplate.sh | sh
-
-    # once you find what you like, redirect that to a file wher you can start editing
-    curl http://atstp.github.io/wasabi/boilerplate.sh | sh >> awesome-project.wasabi.txt
-                                       # ^
-                                       # | if you prefer the indented list
-                                       #   use `indented.sh' instead
-
-feeling fancy?
-
-    # optionally, you can launch a demo page for your project!
-    # there's an interactive prompt, so you can <ctrl-c> out at any time
-    # and it launches a simple python server at the end!
-    curl http://atstp.github.io/wasabi/demo-page.sh > demo-this-project.sh
-    bash demo-this-project.sh
-
 
 --------------------------------------------------------------------------------
 
