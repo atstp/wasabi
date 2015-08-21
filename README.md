@@ -1,7 +1,7 @@
 ![wasabi in action](http://atstp.github.io/wasabi/img/banner.png)
 
 >
-> ## from readable text :page_facing_up:
+> #### turns readable text :page_facing_up:
 >
 >     my-project/
 >       bowser.json # mario's least favorite package manager
@@ -21,7 +21,7 @@
 >         project-name  # run this to generate a new instance
 >                       # of my-project on your machine
 >
-> ## wasabi makes this :tada:
+> #### into an intuitive interface
 >
 > ![wasabi in action](http://atstp.github.io/wasabi/img/demo.gif?clearcache=1)
 >
@@ -49,16 +49,13 @@ wasabi gets you best of both:
   * :eyeglasses: readable and maintainable source text
   * :bulb: a pleasant, intuitive browser interface
 
-please, take it for a [test drive](http://atstp.github.io/wasabi/)!
+## [try it out](http://atstp.github.io/wasabi/)
 
 --------------------------------------------------------------------------------
 
-## "syntax"
+## Format
 
-calling it "syntax" is a bit pretentious; it's pretty simple.
-
-Basically you have two options, what you saw above, where 1) comments come after a "#" and
-2) children are indented beneath their parent. Like so:
+either indent children and use # for comments
 
     my-project/
       bowser.json # mario's least favorite package manager
@@ -70,8 +67,7 @@ Basically you have two options, what you saw above, where 1) comments come after
 
         main.js   # the core of the app, supports x, y, and z
 
-That is great for smaller projects. For larger projects, verbose names and concise comments
-make maintenance and reference easier.
+or list the full path for each entry and indent comments 2 spaces
 
     my-project/
     my-project/bowser.json
@@ -83,6 +79,8 @@ make maintenance and reference easier.
       this file houses a good bit of sugar for the core features
     my-project/src/main.js
       the core of the app, supports x, y, and z
+
+the latter is good for heavily commented larger projects, the former is quicker.
 
 ## generators
 
@@ -108,6 +106,7 @@ feeling fancy?
     # optionally, you can launch a demo page for your project!
     # there's an interactive prompt, so you can <ctrl-c> out at any time
     # and it launches a simple python server at the end!
+
     curl http://atstp.github.io/wasabi/demo-page.sh > demo-this-project.sh
     bash demo-this-project.sh
 
@@ -165,10 +164,12 @@ feeling fancy?
 
 --------------------------------------------------------------------------------
 
-#### colophon
+### colophon
 
-If your project is sushi, this is wasabi; it won't make a bad project good, but
-it should make any project more palatable.
+> **If your project is sushi, this is wasabi**; it won't make a bad project good, but
+> it can make any project better.
+
+#### goals
 
 I made this library because, when jumping :running: into a new project, regardless of circumstance &mdash;
 as a contributor or user, for work or for fun &mdash; it helps _tremendously_ to know what's where.
@@ -179,6 +180,8 @@ as a contributor or user, for work or for fun &mdash; it helps _tremendously_ to
     likely to choose it :relaxed:
   * when new **employees** :neckbeard: don't need to "have a look around" the system to get familiar they'll be
     able to start what they were hired :dollar: for (and want to do) sooner
+
+#### contributing
 
 Projects and maintainers are diverse, so wasabi is built to be convenient for anyone.
 
