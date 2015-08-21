@@ -1,26 +1,30 @@
-## make this :tada:
+![wasabi in action](http://atstp.github.io/wasabi/img/banner.png)
 
-![wasabi in action](http://atstp.github.io/wasabi/img/demo.gif?clearcache=1)
-
-## from readable text :page_facing_up:
-
-    my-project/
-      bowser.json # mario's least favorite package manager
-
-      src/
-        helper.js # be familiar with it's brother main.js
-                  # first, this file houses a good bit of
-                  # sugar for the core features
-
-        main.js   # the core of the app, supports x, y, and z
-
-      dist/
-        build.js      # link to me for testing
-        build.min.js  # tiny and obfuscated, for production
-
-      bin/
-        project-name  # run this to generate a new instance
-                      # of my-project on your machine
+>
+> ## from readable text :page_facing_up:
+>
+>     my-project/
+>       bowser.json # mario's least favorite package manager
+>
+>       src/
+>         helper.js # be familiar with it's brother main.js
+>                   # first, this file houses a good bit of
+>                   # sugar for the core features
+>
+>         main.js   # the core of the app, supports x, y, and z
+>
+>       dist/
+>         build.js      # link to me for testing
+>         build.min.js  # tiny and obfuscated, for production
+>
+>       bin/
+>         project-name  # run this to generate a new instance
+>                       # of my-project on your machine
+>
+> ## wasabi makes this :tada:
+>
+> ![wasabi in action](http://atstp.github.io/wasabi/img/demo.gif?clearcache=1)
+>
 
 ## about
 
