@@ -1,61 +1,6 @@
 ![wasabi in action](http://atstp.github.io/wasabi/img/banner.png)
 
->
-> #### turns readable text :page_facing_up:
->
->     my-project/
->       bowser.json # mario's least favorite package manager
->
->       src/
->         helper.js # be familiar with it's brother main.js
->                   # first, this file houses a good bit of
->                   # sugar for the core features
->
->         main.js   # the core of the app, supports x, y, and z
->
->       dist/
->         build.js      # link to me for testing
->         build.min.js  # tiny and obfuscated, for production
->
->       bin/
->         project-name  # run this to generate a new instance
->                       # of my-project on your machine
->
-> #### into an intuitive interface
->
-> ![wasabi in action](http://atstp.github.io/wasabi/img/demo.gif?clearcache=1)
->
-
-## about
-
-Directory structures are first thing _everyone_ sees :eyes: in _any_ project.
-
-There are a
-[handful](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard)
-[of](http://www.thegeekstuff.com/2010/09/linux-file-system-structure/)
-[approaches](https://developer.apple.com/library/mac/documentation/FileManagement/Conceptual/FileSystemProgrammingGuide/FileSystemOverview/FileSystemOverview.html)
-to help users and contributors, but ascii-art is
-[the](https://scotch.io/tutorials/angularjs-best-practices-directory-structure)
-[_de facto_](http://jekyllrb.com/docs/structure/)
-[standard](http://www.tutorialspoint.com/ruby-on-rails/rails-directory-structure.htm)
-&mdash; did you think you'd ever read that sentence?
-
-Documenting with ascii-art is a quick-fix :wrench: for the developer and _not awesome&trade;_ for the user.
-Using pictures is marginally better, with the side-effect of temporarily turning your dev environment into
-:finnadie: MS Paint.
-
-wasabi gets you best of both:
-
-  * :eyeglasses: readable and maintainable source text
-  * :bulb: a pleasant, intuitive browser interface
-
-## [try it out](http://atstp.github.io/wasabi/)
-
---------------------------------------------------------------------------------
-
-## Format
-
-either indent children and use # for comments
+#### turns readable text :page_facing_up:
 
     my-project/
       bowser.json # mario's least favorite package manager
@@ -67,127 +12,168 @@ either indent children and use # for comments
 
         main.js   # the core of the app, supports x, y, and z
 
-or list the full path for each entry and indent comments 2 spaces
+      dist/
+        build.js      # link to me for testing
+        build.min.js  # tiny and obfuscated, for production
 
-    my-project/
-    my-project/bowser.json
-      mario's least favorite package manager
+      bin/
+        project-name  # run this to generate a new instance
+                      # of my-project on your machine
 
-    my-project/src/
-    my-project/src/helper.js
-      be familiar with it's brother main.js first,
-      this file houses a good bit of sugar for the core features
-    my-project/src/main.js
-      the core of the app, supports x, y, and z
+#### into an intuitive interface
 
-the latter is good for heavily commented larger projects, the former is quicker.
-
-## generators
-
-typing out every entry for your project would be nuts, so wasabi provides a few tiny scripts
-to make this a breeze.
-
-    cd ~/path/to/my/project
-
-    # if you like the indented lists (above)
-    curl http://atstp.github.io/wasabi/indented.sh | sh
-
-    # or if your big project needs a detailed list
-    curl http://atstp.github.io/wasabi/boilerplate.sh | sh
-
-    # once you find what you like, redirect that to a file wher you can start editing
-    curl http://atstp.github.io/wasabi/boilerplate.sh | sh >> awesome-project.wasabi.txt
-                                       # ^
-                                       # | if you prefer the indented list
-                                       #   use `indented.sh' instead
-
-feeling fancy?
-
-    # optionally, you can launch a demo page for your project!
-    # there's an interactive prompt, so you can <ctrl-c> out at any time
-    # and it launches a simple python server at the end!
-
-    curl http://atstp.github.io/wasabi/demo-page.sh > demo-this-project.sh
-    bash demo-this-project.sh
+![wasabi in action](http://atstp.github.io/wasabi/img/demo.gif?clearcache=1)
 
 
-## in the broswer
+## about
 
-### async
+Directory structures are first thing _everyone_ sees :eyes: in _any_ project.
 
->
-> paste this where you want you demo loaded
->
->     <script id="wasabi-location">
->       (function(){
->
->         // replace the url to use your own wasabi file
->         var my_file = 'https://s3.amazonaws.com/wasabi.js/simple-detailed.wasabi';
->
->         var this_id = 'wasabi-location';
->         var W=window.Wasabi=window.Wasabi||{};W.from=my_file;W.here=this_id;
->         var s=document.createElement('script');s.src='https://s3.amazonaws.'+
->         'com/wasabi.js/get-wasabi.js';document.write(s.outerHTML);
->       })();
->     </script>
->
+There are a handful of one-off approaches from
+  [wikipedia](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard),
+  [apple](https://developer.apple.com/library/mac/documentation/FileManagement/Conceptual/FileSystemProgrammingGuide/FileSystemOverview/FileSystemOverview.html),
+  [rubyonrails.org](http://guides.rubyonrails.org/getting_started.html),
+  [laravel](https://laravel.com/docs/master/structure),
+  [the linux documentation project](http://tldp.org/LDP/intro-linux/html/sect_03_01.html),
+  [apache maven](https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html),
+ and
+  [many](http://www.tutorialspoint.com/ruby-on-rails/rails-directory-structure.htm),
+  [many](http://www.howtogeek.com/howto/15677/zen-and-the-art-of-file-and-folder-organization/),
+  [more](http://www.thegeekstuff.com/2010/09/linux-file-system-structure/)
+, but they don't really care; bigger concers I guess...
 
-### inline
+Turns out ascii-art popular enough to be the _de facto_ standard
+(
+  [scotch.io](https://scotch.io/tutorials/angularjs-best-practices-directory-structure),
+  [readthedocs](http://tutos.readthedocs.org/en/latest/source/git_workflow.html),
+  [github's jekyll](http://jekyllrb.com/docs/structure/),
+  and
+  [tutorials point](http://www.tutorialspoint.com/ruby-on-rails/rails-directory-structure.htm)
+)
+&mdash; did you think you'd ever read that sentence?
 
->
-> include the styles, scripts, and plain-text inline
->
->     <link rel="stylesheet" src="wasabi.css"/>
->     <div id="project-structure">
->     my-project/
->       bowser.json # mario's least favorite package manager
->       src/
->         helper.js # be familiar with it's brother main.js
->                   # first, this file houses a good bit of
->                   # sugar for the core features
->
->         main.js   # the core of the app, supports x, y, and z
->       dist/
->         build.js      # link to me for testing
->         build.min.js  # tiny and obfuscated, for production
->       bin/
->         project-name  # run this to generate a new version of
->                       # my project
->     </div>
->
->     <script src="wasabi.js"></script>
->     <script>
->       var myProj = new Wasabi.Project('#project-structure');
->       myProj.replace();
->     </script>
->
+here's a breakdown of some of the approaches:
+
+|the solution | developer/author                             | user
+|-------------|----------------------------------------------|-------
+|picture      | your dev environment is ms paint :finnadie:  | either huge and detailed or too small to be useful
+|ascii-art    | easy                                         | ugly in a browser
+|html list    | not cool                                     | not cool
+|html table   | really not cool                              | not cool
+|random mix   | probably easy(ish)                           | chaos
+|**wasabi**   | readable, maintainable source :eyeglasses:   | a pleasant, intuitive browser interface :bulb:
+
+### [try it](http://atstp.github.io/wasabi/)
 
 --------------------------------------------------------------------------------
 
-### colophon
+## Using it
 
-> **If your project is sushi, this is wasabi**; it won't make a bad project good, but
-> it can make any project better.
+**[formats](#formats) |
+  [generators](#generators) |
+  [in a browser](#in-a-browser)**
 
-#### goals
+## formats
 
-I made this library because, when jumping :running: into a new project, regardless of circumstance &mdash;
-as a contributor or user, for work or for fun &mdash; it helps _tremendously_ to know what's where.
+either **a tree**: indent children and use `#` for comments
 
-  * when **contributors** start out with a full picture of your project, they'll hunt down bugs :bug: faster
-    and more readily
-  * when **users** understand your framework's structure _before_ it's on their machine, they'll be more
-    likely to choose it :relaxed:
-  * when new **employees** :neckbeard: don't need to "have a look around" the system to get familiar they'll be
-    able to start what they were hired :dollar: for (and want to do) sooner
+    my-project/
+      bowser.json # mario's least favorite package manager
 
-#### contributing
+      src/
+        helper.js # be familiar with it's brother main.js
+                  # first, this file houses a good bit of
+                  # sugar for the core features
 
-Projects and maintainers are diverse, so wasabi is built to be convenient for anyone.
+        main.js   # the core of the app, supports x, y, and z
 
-  * old-school user? no need to fuss with the js, the source looks good monospaced
-  * github pages fan? [here's a demo!](http://atstp.github.io/wasabi_and_jekyll/)
-  * js wizard? when you create a wasabi project, it exposes an api &mdash; hack away!
+or **a list**: the full path for each entry and indent comments
+
+    my-project/
+    my-project/bowser.json
+        mario's least favorite package manager
+
+    my-project/src/
+    my-project/src/helper.js
+        be familiar with it's brother main.js first,
+        this file houses a good bit of sugar for the core features
+    my-project/src/main.js
+        the core of the app, supports x, y, and z
+
+the latter is good for heavily commented larger projects with the added bouns of
+being _text searchable_ by path (`grep -A10 'src/main' overview.wasabi` anyone?)
+
+## generators
+
+here are two one-liners :sparkles:
+
+    # print a list
+    printf "YOUR_PROJECT_NAME/%s\n" `git ls-tree -r master --name-only` | \
+       sed 'p;s#[^/]*$##;' | \
+       sort -u
+
+    # or a tree!
+    printf "YOUR_PROJECT_NAME/%s\n" `git ls-tree -r master --name-only` | \
+       sed -n 'p;s#/[^/]*$#%%#p;' | \
+       sort -u | \
+       sed 's#[^/]\+/#    #g;s#%%#/#'
+
+feeling fancy? launch a demo page for your project!
+
+    # this modifies your filesystem (albeit safely) just an fyi
+    curl http://atstp.github.io/wasabi/demo-page.sh > demo-this-project.sh && \
+      bash demo-this-project.sh
+
+### in a browser
+
+paste this where you want you demo loaded
+(and eventually update the url for your project)
+
+    <script id="wasabi-location">
+      (function(){
+
+        // replace the url to use your own wasabi file
+        var my_file = 'https://s3.amazonaws.com/wasabi.js/simple-detailed.wasabi';
+
+        var this_id = 'wasabi-location';
+        var W=window.Wasabi=window.Wasabi||{};W.from=my_file;W.here=this_id;
+        var s=document.createElement('script');s.src='https://s3.amazonaws.'+
+        'com/wasabi.js/get-wasabi.js';document.write(s.outerHTML);
+      })();
+    </script>
+
+
+--------------------------------------------------------------------------------
+
+## colophon
+
+**If your project is sushi, this is wasabi**:
+It won't make a bad project good, but it will make it more appealing.
+
+### goal
+
+Jumping :running: into a new project should be easy
+  &mdash; as a contributor or user, for work or for fun &mdash;
+it helps _tremendously_ to know what's where.
+
+  * when **contributors** start out with a full picture of your project,
+    they'll hunt down bugs :bug: faster and more readily
+  * when **users** understand your framework's structure _before_ it's on their machine,
+    they'll be more likely to choose it :relaxed:
+  * when new **employees** :neckbeard: don't need to "have a look around" the system
+    to get familiar they'll be able to start what
+    they were hired :dollar: for (and want to do) sooner
+
+### contributing
+
+Projects, maintainers, and users are diverse; wasabi should be convenient for anyone:
+
+  * using a docs site? the rendered interface is awesome
+  * writing docs? the source is simple, and rendering it is a breeze
+  * github pages fan? easy to integrate: [here's a demo!](http://atstp.github.io/wasabi_and_jekyll/)
+  * brosing github? the source looks good monospaced
+  * viewing source? the source looks good monospaced
+  * old scool user? the source looks good monospaced
 
 If I botched it with any of this or if you have an idea for improvement, let me know with an
 [issue](https://github.com/atstp/wasabi/issues). if you've got a sweet new feature or a bug-fix,
