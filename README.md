@@ -69,9 +69,9 @@ here's a breakdown of some of the approaches:
 
 ## Using it
 
-**[formats](#formats) |
-  [generators](#generators) |
-  [in a browser](#in-a-browser)**
+pick a **[format](#formats)** :arrow_right:
+**[generate](#generators)** it for your project :arrow_right:
+load it **[in a browser](#in-a-browser)**
 
 ## formats
 
