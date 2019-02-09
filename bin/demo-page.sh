@@ -1,40 +1,48 @@
-#!/bin/bash
+#!/bin/sh
+
 css_location=https://s3.amazonaws.com/wasabi.js/wasabi.css
 js_location=https://s3.amazonaws.com/wasabi.js/wasabi.js
-hl_bold=$(tput bold); hl_ul=$(tput smul); hl_green=$(tput setaf 2)
-hl_blue=$(tput setaf 4); hl_cyan=$(tput setaf 6); un_hl=$(tput sgr0)
-outdir=wasabi-demo
-dirname=${PWD##*/}
-outfile=${outdir}/index.html
-wasabifile=${outdir}/${dirname}.wasabi.txt
 
-if [ -d "$outdir" ] && [ -f "$outfile" ]; then
-  rm ${outdir}/*
+hl_bold=$(tput bold)
+hl_ul=$(tput smul)
+hl_green=$(tput setaf 2)
+hl_blue=$(tput setaf 4)
+hl_cyan=$(tput setaf 6)
+un_hl=$(tput sgr0)
+
+demo_dir=wasabi-demo
+project_name="$(basename "$PWD")"
+outfile=${demo_dir}/index.html
+wasabifile=${demo_dir}/${project_name}.wasabi.txt
+
+if [ -d "$demo_dir" ]; then
+  printf 'STOPPING: demo-directory already exists: %s\n' "$demo_dir" >&2
+  exit 1
 else
-  mkdir $outdir
+  mkdir $demo_dir
 fi
 
 echo
 echo "The ${hl_bold}${hl_green}Wasabi${un_hl} generator will create"
 echo
-echo "    ${hl_blue}${outdir}/"
+echo "    ${hl_blue}${demo_dir}/"
 echo "    ${outfile}"
 echo "    ${wasabifile}${un_hl}   # for async only"
 echo
 printf "do you want an ${hl_bold}${hl_ul}a${un_hl}sync or "
 printf "${hl_bold}${hl_ul}i${un_hl}nline example? (a/i) "
 read preference
-if [[ "${preference}" == i* ]]; then
+if [ "$preference" == "i" ]; then
   async=false
   type_msg=" an inline demo"
 else
   async=true
-  wasabilink="| <a href=\"view-source:/${wasabifile##*/}\">wasabi source</a>"
+  wasabilink="<a href=\"/${wasabifile##*/}\">wasabi source</a>"
   type_msg=" an async demo"
 fi
 
-cat /dev/null > $outfile
-cat /dev/null > $wasabifile
+cat > $outfile < /dev/null
+cat > $wasabifile < /dev/null
 
 ############################################
 #
@@ -42,15 +50,15 @@ cat /dev/null > $wasabifile
 #
 ############################################
 (
-printf "${PWD##*/}/\n"
-printf "  this is a comment on the directory \"${PWD##*/}/\"\n"
+printf "${project_name}/\n"
+printf "  this is a comment on the directory \"${project_name}/\"\n"
 printf "  when listing the full path for each item,\n"
 printf "  comments are indented 2 spaces after their entry.\n\n"
 printf "  <br/>empty lines are OK!\n\n"
 find . -name '.git' -prune -o \
        -name 'node_modules' -prune -o \
        -name '.sass-cache' -prune -o \
-       -printf '%h/%f %y\n' | sed -e '1d' -e 's/ d$/\//' -e 's/ f$//' -e "s/^\./${PWD##*/}/"
+       -printf '%h/%f %y\n' | sed -e '1d' -e 's/ d$/\//' -e 's/ f$//' -e "s/^\./${project_name}/"
 ) >> $wasabifile
 
 
@@ -76,7 +84,7 @@ cat <<END_OF_HTML_HEADER
       .view-source{ position: fixed; top: 0; right: 0; margin: 10px; }
     </style>
 <span class="view-source">
- demo for ${dirname} [ <a title="or ctrl-u" href="view-source:/">page source</a> ${wasabilink} ]
+ demo for ${project_name} | ${wasabilink}
 </span>
 <div class="wrapper">
 
@@ -169,5 +177,4 @@ echo
 echo "    ${hl_cyan}<ctrl-c>${un_hl} to shutdown the server"
 echo
 
-cd ${outdir}
-python -m SimpleHTTPServer 8000 > /dev/null
+(cd ${demo_dir}; python -m http.server 8000)

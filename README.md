@@ -39,8 +39,7 @@ There are a handful of one-off approaches from
  and
   [many](http://www.tutorialspoint.com/ruby-on-rails/rails-directory-structure.htm),
   [many](http://www.howtogeek.com/howto/15677/zen-and-the-art-of-file-and-folder-organization/),
-  [more](http://www.thegeekstuff.com/2010/09/linux-file-system-structure/)
-, but they don't really care; bigger concers I guess...
+  [more](http://www.thegeekstuff.com/2010/09/linux-file-system-structure/).
 
 Turns out ascii-art popular enough to be the _de facto_ standard
 (
@@ -54,12 +53,12 @@ Turns out ascii-art popular enough to be the _de facto_ standard
 
 here's a breakdown of some of the approaches:
 
-|the solution | developer/author                             | user
+|the solution | developer/author experience                  | user experience
 |-------------|----------------------------------------------|-------
 |picture      | your dev environment is ms paint :finnadie:  | either huge and detailed or too small to be useful
 |ascii-art    | easy                                         | ugly in a browser
-|html list    | not cool                                     | not cool
-|html table   | really not cool                              | not cool
+|html table   | okay                                         | no impression of hierarchy
+|html list    | hard to patch                                | awkward to navigate
 |random mix   | probably easy(ish)                           | chaos
 |**wasabi**   | readable, maintainable source :eyeglasses:   | a pleasant, intuitive browser interface :bulb:
 
@@ -69,9 +68,9 @@ here's a breakdown of some of the approaches:
 
 ## Using it
 
-pick a **[format](#formats)** :arrow_right:
-**[generate](#generators)** it for your project :arrow_right:
-load it **[in a browser](#in-a-browser)**
+1. pick a **[format](#formats)**
+2. **[generate](#generators)** it for your project
+3. load it **[in a browser](#in-a-browser)**
 
 ## formats
 
@@ -105,24 +104,30 @@ being _text searchable_ by path (`grep -A10 'src/main' overview.wasabi` anyone?)
 
 ## generators
 
-here are two one-liners :sparkles:
+here are two one-liners 
 
-    # print a list
-    printf "YOUR_PROJECT_NAME/%s\n" `git ls-tree -r master --name-only` | \
-       sed 'p;s#[^/]*$##;' | \
-       sort -u
+print a list:
+```
+printf "YOUR_PROJECT_NAME/%s\n" `git ls-tree -r master --name-only` | \
+   sed 'p;s#[^/]*$##;' | \
+   sort -u
+```
 
-    # or a tree!
-    printf "YOUR_PROJECT_NAME/%s\n" `git ls-tree -r master --name-only` | \
-       sed -n 'p;s#/[^/]*$#%%#p;' | \
-       sort -u | \
-       sed 's#[^/]\+/#    #g;s#%%#/#'
+or a tree!
+```
+printf "YOUR_PROJECT_NAME/%s\n" `git ls-tree -r master --name-only` | \
+   sed -n 'p;s#/[^/]*$#%%#p;' | \
+   sort -u | \
+   sed 's#[^/]\+/#    #g;s#%%#/#'
+```
 
 feeling fancy? launch a demo page for your project!
 
-    # this modifies your filesystem (albeit safely) just an fyi
-    curl http://atstp.github.io/wasabi/demo-page.sh > demo-this-project.sh && \
-      bash demo-this-project.sh
+```
+# this modifies your filesystem (albeit safely) just an fyi
+curl http://atstp.github.io/wasabi/demo-page.sh > demo-this-project.sh && \
+  bash demo-this-project.sh
+```
 
 ### in a browser
 
@@ -175,6 +180,4 @@ Projects, maintainers, and users are diverse; wasabi should be convenient for an
   * viewing source? the source looks good monospaced
   * old scool user? the source looks good monospaced
 
-If I botched it with any of this or if you have an idea for improvement, let me know with an
-[issue](https://github.com/atstp/wasabi/issues). if you've got a sweet new feature or a bug-fix,
-pull requests are welcome!
+issues and pull requests are welcome.
