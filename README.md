@@ -27,7 +27,8 @@
 
 ## about
 
-Directory structures are first thing _everyone_ sees :eyes: in _any_ project.
+Directory structures are first thing _everyone_ sees in _every_ project.
+First impressions and smooth introductions matter.
 
 There are a handful of one-off approaches from
   [wikipedia](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard),
@@ -41,7 +42,7 @@ There are a handful of one-off approaches from
   [many](http://www.howtogeek.com/howto/15677/zen-and-the-art-of-file-and-folder-organization/),
   [more](http://www.thegeekstuff.com/2010/09/linux-file-system-structure/).
 
-Turns out ascii-art popular enough to be the _de facto_ standard
+But it turns out ascii-art popular enough to be the _de facto_ standard
 (
   [scotch.io](https://scotch.io/tutorials/angularjs-best-practices-directory-structure),
   [readthedocs](http://tutos.readthedocs.org/en/latest/source/git_workflow.html),
@@ -60,19 +61,19 @@ here's a breakdown of some of the approaches:
 |html table   | okay                                         | no impression of hierarchy
 |html list    | hard to patch                                | awkward to navigate
 |random mix   | probably easy(ish)                           | chaos
-|**wasabi**   | readable, maintainable source :eyeglasses:   | a pleasant, intuitive browser interface :bulb:
+|**wasabi**   | readable and maintainable :eyeglasses:       | a friendly, intuitive browser interface :bulb:
 
-### [try it](http://atstp.github.io/wasabi/)
+## Demo 
 
---------------------------------------------------------------------------------
+[here](http://atstp.github.io/wasabi/)
 
-## Using it
+## Getting started
 
-1. pick a **[format](#formats)**
+1. pick a **[format](#format-options)**
 2. **[generate](#generators)** it for your project
 3. load it **[in a browser](#in-a-browser)**
 
-## formats
+### format options
 
 either **a tree**: indent children and use `#` for comments
 
@@ -102,7 +103,7 @@ or **a list**: the full path for each entry and indent comments
 the latter is good for heavily commented larger projects with the added bouns of
 being _text searchable_ by path (`grep -A10 'src/main' overview.wasabi` anyone?)
 
-## generators
+### generators
 
 here are two one-liners 
 
